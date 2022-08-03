@@ -51,8 +51,8 @@
   <main class="main-body">
     <h1 class="visually-hidden">Интерент-магазина «Мишка»</h1>
     <header class="inner-header">
-      <div class="inner-header__container container">
-        <ul class="inner-header__list breadcrumbs">
+      <nav class="inner-header__container container">
+        <ul class="inner-header__list">
           <li class="inner-header__item">
             <a href="./catalog.html">
               Новые поступления
@@ -65,7 +65,7 @@
           </li>
         </ul>
         <p class="inner-header__description">Бесплатная доставка по России</p>
-      </div>
+      </nav>
     </header>
     <section class="things-cute">
       <h2 class="things-cute__title title">
@@ -114,24 +114,24 @@
         </dl>
         <img class="featured__image" src="./img/triple-set.jpg" width="260" height="315" alt="Вязаные корзинки">
         <p class="featured__price">Цена: 990 руб.</p>
-        <button class="featured__button button" type="button">ЗАКАЗАТЬ</button>
+        <a class="featured__button button" href="#">ЗАКАЗАТЬ</a>
       </div>
     </section>
     <section class="advantages">
       <div class="advantages__container container">
         <h2 class="advantages__title title">Коротко о нас:</h2>
         <ul class="advantages__list">
-          <li class="advantages__item flover-icon">Экологически чистые материалы</li>
-          <li class="advantages__item money-icon">Скандинавский стиль по российской цене</li>
-          <li class="advantages__item heart-icon">Увеличивает лайки на фотографиях</li>
-          <li class="advantages__item yarn-icon">Связано вручную с любовью и умилением</li>
-          <li class="advantages__item rocket-icon">Поддержка отечественного производителя</li>
-          <li class="advantages__item gift-icon">Поставляется в подарочной упаковке</li>
+          <li class="advantages__item advantages__item--flover-icon">Экологически чистые материалы</li>
+          <li class="advantages__item advantages__item--money-icon">Скандинавский стиль по российской цене</li>
+          <li class="advantages__item advantages__item--heart-icon">Увеличивает лайки на фотографиях</li>
+          <li class="advantages__item advantages__item--yarn-icon">Связано вручную с любовью и умилением</li>
+          <li class="advantages__item advantages__item--rocket-icon">Поддержка отечественного производителя</li>
+          <li class="advantages__item advantages__item--gift-icon">Поставляется в подарочной упаковке</li>
         </ul>
       </div>
     </section>
     <section class="reviews">
-      <div class="reviews__container container">
+      <div class="reviews__container slider container">
         <h2 class="reviews__title title">Отзывы</h2>
         <a class="reviews__button button" href="#">Написать</a>
         <ul class="reviews__list slider__list">
@@ -140,8 +140,8 @@
               <blockquote class="user-quote__text">Я молодая мама, но всё равно фотографии не набирали и близко
                 такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в
                 Мишке,и мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>>
-              <cite class="user-quote__author">Анастасия Красильникова</cite>
-              <a class="user-quote__link" href="#">@misssssiskras</a>
+              <figcaption class="user-quote__author">Анастасия Красильникова</figcaption>
+              <cite class="user-quote__link">@misssssiskras</cite>
             </figure>
           </li>
           <li class="reviews__item slider__item">
@@ -150,8 +150,8 @@
                 близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
                 и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
                 больше лайков!</blockquote>
-              <cite class="user-quote__author">Екатерина Красильникова</cite>
-              <a class="user-quote__link" href="#">@misssssiskras2</a>
+              <figcaption class="user-quote__author">Екатерина Красильникова</figcaption>
+              <cite class="user-quote__link">@misssssiskras2</cite>
             </figure>
           </li>
           <li class="reviews__item slider__item">
@@ -160,8 +160,8 @@
                 набирали и близкотакого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила
                 аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
                 больше лайков!</blockquote>
-              <cite class="user-quote__author">Елена Красильникова</cite>
-              <a class="user-quote__link" href="#">@misssssiskras3</a>
+              <figcaption class="user-quote__author">Елена Красильникова</figcaption>
+              <cite class="user-quote__link">@misssssiskras3</cite>
             </figure>
           </li>
         </ul>
@@ -191,7 +191,7 @@
           <dd class="contacts__description">г. Санкт-Петербургул. Большая Конюшеннаяд. 19/8, офис 101</dd>
         </dl>
         <a class="contacts__button button" href="#">Напишите нам</a>
-        <!-- Как правильней вставить карту? обычно картинкой или нормальной картой -->
+        <img src="./img/map-location.jpg" width="320" height="454" alt="Адрес интерент-магазина «Мишка».">
       </div>
     </section>
   </main>
@@ -233,20 +233,31 @@
     <section class="modal__container">
       <h2 class="modal__title title">Добавить в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
-      <div class="modal__cart">
-        <button class="modal__cart--button button" type="button">
-          S
+      <form class="modal__cart" action="https://echo.htmlacademy.ru/" method="get">
+        <ul class="modal__cart--list">
+          <li class="modal__cart--item">
+            <label class="control">
+              <input class="visually-hidden control-input" type="radio" name="percent" value="S" checked="">
+              <span class="modal__cart--label">S</span>
+            </label>
+          </li>
+          <li class="modal__cart--item">
+            <label class="control">
+              <input class="visually-hidden control-input" type="radio" name="percent" value="M" checked="">
+              <span class="modal__cart--label">M</span>
+            </label>
+          </li>
+          <li class="modal__cart--item">
+            <label class="control">
+              <input class="visually-hidden control-input" type="radio" name="percent" value="L" checked="">
+              <span class="modal__cart--label">L</span>
+            </label>
+          </li>
+        </ul>
+        <button class="modal__button button" type="button">
+          Добавить
         </button>
-        <button class="modal__cart--button button" type="button">
-          M
-        </button>
-        <button class="modal__cart--button button" type="button">
-          L
-        </button>
-      </div>
-      <button class="modal__button button" type="button">
-        Добавить
-      </button>
+      </form>
     </section>
   </div>
 </body>
