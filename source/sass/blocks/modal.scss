@@ -1,66 +1,66 @@
 .modal-close {
-    display: none;
+  display: none;
 }
 
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    // display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background: $white-opacity;
-    border: 1px solid $gray-extra-light;
-    box-shadow: 0px 5px 10px rgba(0, 1, 1, 0.25);
+  position: fixed;
+  top: 0;
+  left: 0;
+  // display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: $white-opacity;
+  border: 1px solid $gray-extra-light;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25); /* Добавить цвет*/
 }
 
 .modal__container {
-    position: relative;
-    padding: 28px 30px 46px;
-    background-color: $white;
+  position: relative;
+  padding: 28px 30px 46px;
+  background-color: $white;
 }
 
 .modal__title {
-    margin: 0;
-    margin-bottom: 14px;
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 30px;
-    text-align: center;
+  margin: 0;
+  margin-bottom: 14px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
 }
 
 .modal__text {
-    padding-bottom: 21px;
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 30px;
-    color: $gray-dark;
-    text-align: center;
+  padding-bottom: 21px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: $gray-dark;
+  text-align: center;
 }
 
 .modal__cart {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal__cart--list {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    margin-bottom: 31px;
-    padding: 0;
-    list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 31px;
+  padding: 0;
+  list-style: none;
 }
 
 .modal__cart--item {
-    padding: 18px 22px;
-    background: $white;
-    border: 2px solid $green;
+  padding: 18px 22px;
+  background: $white;
+  border: 2px solid $green;
 }

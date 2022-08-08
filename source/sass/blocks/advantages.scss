@@ -1,56 +1,60 @@
 .advantages {
-    margin-bottom: 58px;
+  margin-bottom: 58px;
 }
 
 .advantages__title {
-    margin: 0;
-    margin-bottom: 82px;
-    font-size: 25px;
+  margin: 0;
+  margin-bottom: 82px;
+  font-size: 25px;
 }
 
 .advantages__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .advantages__item {
-    position: relative;
-    padding-bottom: 83px;
+  position: relative;
+  padding-bottom: 83px;
 }
 
 .advantages__item::before {
-    position: absolute;
-    top: -26px;
-    left: 0;
-    bottom: 0;
-    width: 55px;
-    height: 38px;
-    content: ""; 
+  position: absolute;
+  top: -26px;
+  left: 0;
+  bottom: 0;
+  width: 55px;
+  height: 38px;
+  content: "";
 }
 
 .advantages__item--flover-icon::before {
-    background-image: url("../../img/icon-flover.svg");
-    background-repeat: no-repeat;
+  background-image: url("../../img/icon-flover.svg");
+  background-repeat: no-repeat;
 }
 
 .advantages__item--money-icon::before {
-    background-image: url("../../img/icon-money.svg");
-    background-repeat: no-repeat;
+  background-image: url("../../img/icon-money.svg");
+  background-repeat: no-repeat;
 }
+
 .advantages__item--heart-icon::before {
-    background-image: url("../../img/icon-heart.svg");
-    background-repeat: no-repeat;
+  background-image: url("../../img/icon-heart.svg");
+  background-repeat: no-repeat;
 }
+
 .advantages__item--yarn-icon::before {
-    background-image: url("../../img/icon-yarn.svg");
-    background-repeat: no-repeat;
+  background-image: url("../../img/icon-yarn.svg");
+  background-repeat: no-repeat;
 }
+
 .advantages__item--rocket-icon::before {
-    background-image: url("../../img/icon-rocket.svg");
-    background-repeat: no-repeat;
+  background-image: url("../../img/icon-rocket.svg");
+  background-repeat: no-repeat;
 }
+
 .advantages__item--gift-icon::before {
-    background-image: url("../../img/icon-gift.svg");
-    background-repeat: no-repeat;
+  background-image: url("../../img/icon-gift.svg");
+  background-repeat: no-repeat;
 }

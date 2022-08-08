@@ -1,28 +1,26 @@
 .navigation {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .navigation__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .navigation__item {
-    display: flex;
-    justify-content: center;
-    padding: 28px 0 26px;
-
-
-    box-shadow: 0px 1px 0px $gray-light, inset 0px 1px 0px $gray-light;
+  display: flex;
+  justify-content: center;
+  padding: 28px 0 26px;
+  box-shadow: 0 1px 0 $gray-light, inset 0 1px 0 $gray-light;
 }
 
 .navigation__link {
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
-    color: $black;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $black;
 }

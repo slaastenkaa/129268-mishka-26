@@ -1,57 +1,57 @@
 .catalog__list {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .catalog__item {
-    margin-bottom: 30px;
-    border: 1px solid $gray-light;
+  margin-bottom: 30px;
+  border: 1px solid $gray-light;
 }
 
 .card__image {
-    padding-bottom: 24px;
+  padding-bottom: 24px;
 }
 
 .card__title {
-    padding-bottom: 6px;
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
-    color: $black;
+  padding-bottom: 6px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $black;
 }
 
 .card__text {
-    margin-bottom: 41px;
-    padding-bottom: 17px;
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 30px;
-    color: $gray-dark;
-    border-bottom: 1px solid $gray-light;
+  margin-bottom: 41px;
+  padding-bottom: 17px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+  color: $gray-dark;
+  border-bottom: 1px solid $gray-light;
 }
 
 .card__info {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .card__price {
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 24px;
-    color: $black;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: $black;
 }
 
 .card__button {
-    border: none;
+  border: none;
 }
