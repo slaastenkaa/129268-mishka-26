@@ -1,0 +1,56 @@
+.production {
+    margin-bottom: 58px;
+    padding-bottom: 33px;
+    border: 1px solid $gray-light;
+}
+
+.production__title {
+    position: relative;
+    margin: 21px 0 26px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    color: $black;
+}
+
+.production__title::before {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    width: 55px;
+    height: 38px;
+    content: "";
+
+    background-image: url("../../img/video.svg");
+    background-repeat: no-repeat;
+}
+
+.production__video {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.production__text {
+    margin: 0;
+    margin-bottom: 41px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: $gray-dark;
+}
+
+.production__button {
+   padding: 18px 11px;
+   font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    color: $gray-dark;
+}

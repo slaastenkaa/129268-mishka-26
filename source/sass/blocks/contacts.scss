@@ -1,0 +1,41 @@
+.contacts {
+  margin-bottom: 39px;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 28px;
+  font-size: 25px;
+}
+
+.contacts__list {
+    margin-bottom: 62px;
+}
+
+.contacts__subtitle {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $gray-dark;
+}
+
+.contacts__description {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $gray-dark;
+}
+
+.contacts__mail {
+  padding-bottom: 10px;
+  border-bottom: 1px solid $palegreen-light;
+  color: $gray-dark;
+}
+
+.contacts__map {
+    margin-bottom: 42px;
+}

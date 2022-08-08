@@ -1,0 +1,40 @@
+.things-cute {
+    margin-bottom: 31px;
+}
+
+.things-cute__title {
+    margin: 0;
+    padding-top: 73px;
+    padding-bottom: 120px;
+    text-align: center;
+    font-size: 27px;
+    background-image: url("../../img/home-for-toys.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+
+.things-cute__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.things-cute__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 0 18px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    color: $white;
+    background-color: $green;
+}
+
+.things-cute__item:nth-child(2) {
+    background-color: $green-dark;
+}
