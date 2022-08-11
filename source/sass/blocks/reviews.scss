@@ -1,0 +1,39 @@
+.reviews {
+  margin-bottom: 89px;
+}
+
+.reviews__container {
+  display: grid;
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 14px;
+  @include title;
+  font-size: 25px;
+}
+
+.reviews__button {
+  order: 1;
+}
+
+.reviews__list {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews__item:not(:first-child) {
+  display: none;
+}
+
+.reviews__button--slider {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 54px;
+}
+
+.slider-button__icon {
+  color: $black;
+}

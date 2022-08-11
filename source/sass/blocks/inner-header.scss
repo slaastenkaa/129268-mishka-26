@@ -1,0 +1,53 @@
+.inner-header__container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.inner-header__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.inner-header__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.inner-header__link {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: $black;
+}
+
+.inner-header__description {
+  @include text;
+  font-size: 15px;
+  line-height: 24px;
+  color: $gray-dark;
+}
+
+.catalog-inner__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 74px 42px;
+  @include title;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  background-color: $anti-flash-white;
+}
+
+.order-inner__title {
+  margin: 0;
+  padding: 73px 0;
+  @include title;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  background-color: $anti-flash-white;
+}

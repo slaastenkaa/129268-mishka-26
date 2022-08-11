@@ -1,0 +1,11 @@
+.filter-group__list {
+  list-style: none;
+}
+  
+.filter__text {
+  margin-bottom: 30px;
+  @include text;
+  font-size: 14px;
+  line-height: 16px;
+  color: $gray-dark;
+}

@@ -1,0 +1,35 @@
+.card__image {
+  padding-bottom: 24px;
+}
+  
+.card__title {
+  padding-bottom: 6px;
+  @include title;
+  font-size: 17px;
+  line-height: 24px;
+}
+  
+.card__text {
+  margin-bottom: 41px;
+  padding-bottom: 17px;
+  @include text;
+  font-size: 13px;
+  line-height: 30px;
+  color: $gray-dark;
+  border-bottom: 1px solid $gray-light;
+}
+  
+.card__info {
+  display: flex;
+  justify-content: space-around;
+}
+  
+.card__price {
+  @include title;
+  font-size: 15px;
+  line-height: 24px;
+}
+  
+.card__button {
+  border: none;
+}
