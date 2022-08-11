@@ -24,29 +24,30 @@
   color: $black;
 }
 
+.inner-header__description {
+  @include text;
+  font-size: 15px;
+  line-height: 24px;
+  color: $gray-dark;
+}
+
 .catalog-inner__title {
   margin: 0;
   margin-bottom: 30px;
   padding: 74px 42px;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 700;
+  @include title;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-  color: $black;
   background-color: $anti-flash-white;
 }
 
 .order-inner__title {
   margin: 0;
   padding: 73px 0;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 700;
+  @include title;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-  color: $black;
   background-color: $anti-flash-white;
 }

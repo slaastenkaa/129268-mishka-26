@@ -3,15 +3,14 @@
 }
 
 .featured__title {
+  @include title;
   font-size: 25px;
   padding-bottom: 4px;
 }
 
 .featured__subtitle {
   padding-bottom: 17px;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 700;
+  @include title;
   font-size: 17px;
   line-height: 20px;
   color: $green;
@@ -19,9 +18,7 @@
 
 .featured__text {
   padding-bottom: 28px;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
+  @include text;
   font-size: 15px;
   line-height: 24px;
   color: $gray-dark;
@@ -32,9 +29,7 @@
   padding: 5px 0;
   // float: left;
   // clear: both;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
+  @include text;
   font-size: 15px;
   color: $gray-dark;
   border-top: 1px solid $gray-light;
@@ -43,9 +38,7 @@
 .featured__description {
   margin: 0 0 0 10px;
   padding: 5px 0;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
+  @include text;
   font-size: 15px;
   color: $gray-dark;
   border-top: 1px solid $gray-light;
@@ -66,9 +59,7 @@
 
 .featured__price {
   padding-bottom: 24px;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 700;
+  @include title;
   font-size: 17px;
   line-height: 24px;
   text-align: center;

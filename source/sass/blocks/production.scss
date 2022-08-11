@@ -7,9 +7,7 @@
 .production__title {
   position: relative;
   margin: 21px 0 26px;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 700;
+  @include title;
   font-size: 17px;
   line-height: 24px;
   text-align: center;
@@ -23,7 +21,7 @@
   width: 55px;
   height: 38px;
   content: "";
-  background-image: url("../../img/video.svg");
+  background-image: url("../img/video.svg");
   background-repeat: no-repeat;
 }
 
@@ -36,9 +34,7 @@
 .production__text {
   margin: 0;
   margin-bottom: 41px;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
+  @include text;
   font-size: 13px;
   line-height: 24px;
   color: $gray-dark;
@@ -46,9 +42,7 @@
 
 .production__button {
   padding: 18px 11px;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 700;
+  @include title;
   font-size: 18px;
   line-height: 16px;
   color: $gray-dark;

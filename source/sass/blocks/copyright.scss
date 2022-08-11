@@ -1,0 +1,10 @@
+.copyright__title {
+  @include title;
+  font-size: 19px;
+  line-height: 18px;
+}
+  
+.copyright__link--icon {
+  color: $green;
+}
+  

@@ -6,10 +6,10 @@
   margin: 0;
   padding-top: 73px;
   padding-bottom: 120px;
+  @include title;
   text-align: center;
   font-size: 27px;
-  background-image: url("../../img/home-for-toys.jpg");
-  background-repeat: no-repeat;
+  background: $anti-flash-white url("../img/home-for-toys.jpg") no-repeat;
   background-position-x: center;
   background-size: cover;
 }
