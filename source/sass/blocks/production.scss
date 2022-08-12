@@ -1,7 +1,8 @@
 .production {
+  display: grid;
   margin-bottom: 58px;
   padding-bottom: 33px;
-  border: 1px solid $gray-light;
+  border: 1px solid $red-light;
 }
 
 .production__title {
@@ -32,7 +33,6 @@
 }
 
 .production__text {
-  margin: 0;
   margin-bottom: 41px;
   @include text;
   font-size: 13px;
@@ -46,4 +46,20 @@
   font-size: 18px;
   line-height: 16px;
   color: $gray-dark;
+}
+
+@media (min-width: $tablet-width) {
+  .production__video {
+    grid-row: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .production__video {
+    grid-row: 1 / 4;
+  }
 }
