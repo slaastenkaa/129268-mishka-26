@@ -18,3 +18,21 @@
   justify-content: space-evenly;
   margin-bottom: 22px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 51px 0 58px;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer__social {
+    margin: 0 auto;
+    padding: 0;
+  }
+}

@@ -1,15 +1,14 @@
 .user-quote__text {
-    margin: 0;
-    padding-bottom: 33px;
-    @include text;
-    font-size: 15px;
-    line-height: 30px;
-    color: $gray-dark;
-  }
-  
-  .user-quote__author {
-    @include title;
-    font-size: 17px;
-    line-height: 24px;
-  }
-  
+  margin: 0;
+  padding-bottom: 33px;
+  @include text;
+  font-size: 15px;
+  line-height: 30px;
+  color: $gray-dark;
+}
+
+.user-quote__author {
+  @include title;
+  font-size: 17px;
+  line-height: 24px;
+}

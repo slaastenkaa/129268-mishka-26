@@ -1,14 +1,18 @@
-.card__image {
+.card__link-image {
   padding-bottom: 24px;
 }
-  
+
+.card__image {
+  min-width: 100%;
+}
+
 .card__title {
   padding-bottom: 6px;
   @include title;
   font-size: 17px;
   line-height: 24px;
 }
-  
+
 .card__text {
   margin-bottom: 41px;
   padding-bottom: 17px;
@@ -16,20 +20,27 @@
   font-size: 13px;
   line-height: 30px;
   color: $gray-dark;
-  border-bottom: 1px solid $gray-light;
+  border-bottom: 1px solid $red-light;
 }
-  
+
 .card__info {
   display: flex;
   justify-content: space-around;
 }
-  
+
 .card__price {
   @include title;
   font-size: 15px;
   line-height: 24px;
 }
-  
+
 .card__button {
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .card__link-image {
+    grid-column: 1;
+    grid-row: 1 / 4;
+  }
 }

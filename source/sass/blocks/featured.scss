@@ -3,12 +3,16 @@
 }
 
 .featured__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 4px;
   @include title;
   font-size: 25px;
-  padding-bottom: 4px;
 }
 
 .featured__subtitle {
+  margin: 0;
+  padding: 0;
   padding-bottom: 17px;
   @include title;
   font-size: 17px;
@@ -17,6 +21,8 @@
 }
 
 .featured__text {
+  margin: 0;
+  padding: 0;
   padding-bottom: 28px;
   @include text;
   font-size: 15px;
@@ -32,7 +38,7 @@
   @include text;
   font-size: 15px;
   color: $gray-dark;
-  border-top: 1px solid $gray-light;
+  border-top: 1px solid $red-light;
 }
 
 .featured__description {
@@ -41,7 +47,7 @@
   @include text;
   font-size: 15px;
   color: $gray-dark;
-  border-top: 1px solid $gray-light;
+  border-top: 1px solid $red-light;
 }
 
 .featured__options:first-child,
@@ -64,4 +70,59 @@
   line-height: 24px;
   text-align: center;
   color: $gray-dark;
+}
+
+@media (min-width: $tablet-width) {
+  .featured__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .featured__aside {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featured__image {
+    grid-row: 1 / 4;
+    grid-column: 2;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .featured__header{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+  }
+
+  .featured__title {
+    order: 1;
+  }
+
+  .featured__aside {
+    grid-template-columns: 1fr 2fr 3fr;
+  }
+
+  .featured__text {
+    padding-top: 100px;
+    grid-column: 2;
+  }
+
+  .featured__list {
+    grid-column: 2;
+  }
+
+  .featured__image {
+    grid-column: 3;
+  }
+
+  .featured__price {
+    grid-column: 2;
+  }
+
+  .featured__button {
+    grid-column: 2;
+  }
 }

@@ -37,3 +37,25 @@
 .slider-button__icon {
   color: $black;
 }
+
+@media (min-width: $tablet-width) {
+  .reviews__container {
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .reviews__button {
+    order: 0;
+  }
+
+  .reviews__list {
+    position: relative;
+    grid-column: 1/3;
+  }
+
+  .reviews__button--slider {
+    position: absolute;
+    top: 180px;
+    right: 0;
+  }
+}
