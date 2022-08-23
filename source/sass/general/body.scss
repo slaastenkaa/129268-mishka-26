@@ -23,11 +23,23 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    max-width: 668px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 1051px;
+  }
 }
