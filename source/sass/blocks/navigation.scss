@@ -110,6 +110,18 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .navigation__list {
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    width: 100%;
+    background-color: $white;
+  }
+
+  .user-navigation {
+    top: 235px;
+  }
+
   .page-header .container {
     width: 100%;
   }

@@ -9,11 +9,13 @@
 .reviews__title {
   margin: 0;
   margin-bottom: 14px;
+
   @include title;
   font-size: 25px;
 }
 
 .reviews__button {
+  width: fit-content;
   order: 1;
 }
 
@@ -38,10 +40,20 @@
   color: $black;
 }
 
+.slider-button__prev,
+.slider-button__next {
+  padding: 13px 17%;
+}
+
 @media (min-width: $tablet-width) {
+  .reviews {
+    background: $white url("../img/lace.jpg") no-repeat;
+    background-position: 0%;
+  }
+
   .reviews__container {
     position: relative;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
   }
 
   .reviews__button {

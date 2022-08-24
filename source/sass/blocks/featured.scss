@@ -3,73 +3,77 @@
 }
 
 .featured__title {
+  @include title;
   margin: 0;
   padding: 0;
   padding-bottom: 4px;
-  @include title;
   font-size: 25px;
 }
 
 .featured__subtitle {
+  @include title;
   margin: 0;
   padding: 0;
   padding-bottom: 17px;
-  @include title;
   font-size: 17px;
   line-height: 20px;
   color: $green;
 }
 
 .featured__text {
+  @include text;
   margin: 0;
   padding: 0;
   padding-bottom: 28px;
-  @include text;
   font-size: 15px;
   line-height: 24px;
   color: $gray-dark;
 }
 
+.featured__list {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
 .featured__options {
-  margin: 0 10px 0 0;
-  padding: 5px 0;
-  // float: left;
-  // clear: both;
   @include text;
+  padding: 5px 0;
+  width: auto;
   font-size: 15px;
   color: $gray-dark;
-  border-top: 1px solid $red-light;
+  border-bottom: 1px solid $red-light;
 }
 
 .featured__description {
-  margin: 0 0 0 10px;
-  padding: 5px 0;
   @include text;
+  margin: 0;
+  padding: 5px 0;
+  width: auto;
   font-size: 15px;
   color: $gray-dark;
-  border-top: 1px solid $red-light;
-}
-
-.featured__options:first-child,
-.featured__description:first-child {
-  border-top: none;
+  border-bottom: 1px solid $red-light;
 }
 
 .featured__image {
   display: flex;
   margin: 0 auto;
   margin-bottom: 25px;
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 
 .featured__price {
-  padding-bottom: 24px;
   @include title;
+  margin: 0;
+  padding-bottom: 24px;
   font-size: 17px;
   line-height: 24px;
   text-align: center;
   color: $gray-dark;
+}
+
+.featured__button {
+  width: fit-content;
 }
 
 @media (min-width: $tablet-width) {
@@ -91,7 +95,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .featured__header{
+  .featured__header {
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 5fr;
