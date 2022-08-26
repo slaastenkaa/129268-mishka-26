@@ -1,8 +1,8 @@
 .catalog__title {
+  @include title;
   margin: 0;
   margin-bottom: 30px;
   padding: 74px 42px;
-  @include title;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
@@ -28,7 +28,7 @@
   }
 }
 
-@media  (min-width: $desktop-width){
+@media (min-width: $desktop-width) {
   .catalog__list {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;

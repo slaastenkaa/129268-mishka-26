@@ -1,15 +1,15 @@
-let navOpen = document.querySelector('.navigation__opened');
+let navClose = document.querySelector('.navigation__closed');
 let navButton = document.querySelector('.navigation__button');
 
-navOpen.classList.remove('navigation__nojs');
+navClose.classList.remove('navigation__nojs');
 
 navButton.addEventListener('click', function () {
-  if (navOpen.classList.contains('navigation__closed')) {
-    navOpen.classList.remove('navigation__closed');
-    navOpen.classList.add('navigation__opened');
+  if (navClose.classList.contains('navigation__opened')) {
+    navClose.classList.remove('navigation__opened');
+    navClose.classList.add('navigation__closed');
   } else {
-    navOpen.classList.add('navigation__closed');
-    navOpen.classList.remove('navigation__opened');
+    navClose.classList.add('navigation__opened');
+    navClose.classList.remove('navigation__closed');
   }
 });
 

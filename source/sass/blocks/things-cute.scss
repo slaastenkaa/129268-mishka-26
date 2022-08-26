@@ -6,10 +6,11 @@
 }
 
 .things-cute__title {
+  @include title;
   max-width: 220px;
+  margin: 0 auto;
   padding-top: 170px;
   padding-bottom: 200px;
-  @include title;
   text-align: center;
   font-size: 27px;
 }
