@@ -1,17 +1,17 @@
 .things-cute {
   margin-bottom: 31px;
+  background: $gray-extra-light url("../img/home-for-toys.jpg") no-repeat;
+  background-position: 50% -77px;
+  background-size: cover;
 }
 
 .things-cute__title {
-  margin: 0;
-  padding-top: 73px;
-  padding-bottom: 120px;
+  max-width: 220px;
+  padding-top: 170px;
+  padding-bottom: 200px;
   @include title;
   text-align: center;
   font-size: 27px;
-  background: $anti-flash-white url("../img/home-for-toys.jpg") no-repeat;
-  background-position-x: center;
-  background-size: cover;
 }
 
 .things-cute__list {
@@ -22,7 +22,6 @@
 
 .things-cute__item {
   display: flex;
-  justify-content: space-between;
   padding: 23px 0 18px;
   font-family: inherit;
   font-style: normal;
@@ -35,4 +34,20 @@
 
 .things-cute__item:nth-child(2) {
   background-color: $green-dark;
+}
+
+.things-cute__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .things-cute__title {
+    max-width: 500px;
+    padding-top: 109px;
+    padding-bottom: 372px;
+    font-size: 43px;
+    line-height: 50px;
+    background-position: 50% 58px;
+  }
 }

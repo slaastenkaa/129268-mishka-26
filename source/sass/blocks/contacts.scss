@@ -7,9 +7,9 @@
 }
 
 .contacts__title {
+  @include title;
   margin: 0;
   margin-bottom: 28px;
-  @include title;
   font-size: 25px;
 }
 
@@ -42,7 +42,14 @@
 }
 
 .contacts__map {
+  width: 100%;
   margin-bottom: 42px;
+  border: 0;
+}
+
+.contacts__button {
+  width: fit-content;
+  height: fit-content;
 }
 
 @media (min-width: $tablet-width) {
