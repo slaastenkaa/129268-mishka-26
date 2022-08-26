@@ -86,16 +86,23 @@
   }
 }
 
+.navigation__link--icon {
+  opacity: 0.2;
+}
+
 .navigation__link:hover .navigation__link--icon {
   color: $green;
+  opacity: 0.6;
 }
 
 .navigation__link:focus .navigation__link--icon {
   color: $green;
+  opacity: 0.6;
 }
 
 .navigation__link:active .navigation__link--icon {
   color: $green-light;
+  opacity: 1;
 }
 
 .navigation-additional__link {
