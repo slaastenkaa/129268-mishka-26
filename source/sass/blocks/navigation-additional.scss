@@ -44,6 +44,10 @@
     padding-top: 21px;
   }
 
+  .navigation-additional__item .navigation__link {
+    font-size: 15px;
+  }
+
   .navigation-additional__description {
     display: flex;
     margin-left: auto;
@@ -54,13 +58,16 @@
 @media (min-width: $desktop-width) {
   .navigation-additional {
     grid-template-columns: 1fr 1fr;
-    order: 4;
+  }
+
+  .navigation-additional__item .navigation__link {
+    font-size: 17px;
   }
 
   .info-navigation {
     display: grid;
     grid-template-columns: max-content max-content;
-    gap: 5%;
+    gap: 7%;
   }
 
   .navigation-additional__description {

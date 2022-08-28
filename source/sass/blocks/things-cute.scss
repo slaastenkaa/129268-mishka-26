@@ -1,6 +1,6 @@
 .things-cute {
   margin-bottom: 31px;
-  background: $gray-extra-light url("../img/home-for-toys.jpg") no-repeat;
+  background: $gray-extra-light url("../img/home-for-toys-mobile.jpg") no-repeat;
   background-position: 50% -77px;
   background-size: cover;
 }
@@ -21,9 +21,11 @@
   list-style: none;
 }
 
+
 .things-cute__item {
   display: flex;
-  padding: 23px 0 18px;
+  justify-content: space-between;
+  padding: 23px 30px 18px;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -33,8 +35,21 @@
   background-color: $green;
 }
 
-.things-cute__item:nth-child(2) {
+.things-cute__text {
+  width: min-content;
+}
+
+.things-cute__item:hover {
+  margin-top: -5px;
+  background-color: $sweet-garden;
+}
+
+.things-cute__item:nth-child(2n) {
   background-color: $green-dark;
+}
+
+.things-cute__item:nth-child(2n):hover {
+  background-color: $palegreen;
 }
 
 .things-cute__container {
@@ -43,6 +58,34 @@
 }
 
 @media (min-width: $tablet-width) {
+  .things-cute {
+    position: relative;
+    background-image: url("../img/home-for-toys.jpg");
+    background-size: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/home-for-toys-desktop.jpg");
+      background-size: auto;
+    }
+
+    .things-cute__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 0 auto;
+    }
+
+    .things-cute__list::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/icon-zigzag.png");
+      background-repeat: repeat-x;
+    }
+  }
+
   .things-cute__title {
     max-width: 500px;
     padding-top: 109px;
@@ -50,5 +93,10 @@
     font-size: 43px;
     line-height: 50px;
     background-position: 50% 58px;
+  }
+
+  .things-cute__item {
+    flex-wrap: wrap;
+    font-size: 20px;
   }
 }

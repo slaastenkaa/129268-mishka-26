@@ -11,3 +11,15 @@
   border: 2px solid $gray-dark;
   text-decoration: none;
 }
+
+.button:hover {
+  background: $gray-dark;
+  border: 2px solid $gray-dark;
+  color: $white;
+}
+
+.button:active {
+  background: $gray-dark;
+  border: 2px solid $gray-dark;
+  color: $white-opacity-extra;
+}

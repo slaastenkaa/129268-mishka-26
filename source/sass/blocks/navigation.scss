@@ -14,7 +14,11 @@
 
 .navigation__logo-image {
   &:hover {
-    color: $black-medium;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.2;
   }
 }
 
@@ -28,6 +32,7 @@
   height: 20px;
   padding: 0;
   cursor: pointer;
+  background-color: transparent;
   border: none;
 }
 
@@ -69,13 +74,14 @@
 }
 
 .navigation__item {
-  padding: 28px 0 20px;
+  padding: 30px 0 30px;
   text-align: center;
   box-shadow: inset 0 1px 0 $red-light;
 }
 
 .navigation__link {
   @include title;
+  font-size: 17px;
 
   &:hover,
   &:focus {
@@ -96,17 +102,14 @@
   opacity: 0.6;
 }
 
-.navigation__link:focus .navigation__link--icon {
-  color: $green;
-  opacity: 0.6;
-}
-
 .navigation__link:active .navigation__link--icon {
   color: $green-light;
   opacity: 1;
 }
 
 .navigation-additional__link {
+  font-size: 15px;
+
   &:hover,
   &:focus {
     color: $black-medium;
@@ -127,7 +130,7 @@
   }
 
   .user-navigation {
-    top: 235px;
+    top: 260px;
   }
 
   .page-header .container {
@@ -149,9 +152,14 @@
   }
 
   .navigation__logo {
-    margin-left: 0;
-    padding-left: 0;
+    margin: 0;
+    padding: 22px 0 20px;
     grid-column: 1;
+  }
+
+  .navigation__logo-image {
+    width: 113px;
+    height: 46px;
   }
 
   .navigation__button {
@@ -173,7 +181,7 @@
   .site-navigation {
     display: grid;
     position: absolute;
-    top: 71px;
+    top: 80px;
     gap: 5%;
     grid-template-columns: max-content max-content;
     z-index: 1;
@@ -186,8 +194,7 @@
     margin-left: auto;
   }
 
-  .user-navigation .navigation__item:not(:last-child) {
-    border-right: 1px solid $red-light;
+  .user-navigation .navigation__item {
     border-left: 1px solid $red-light;
   }
 
@@ -203,9 +210,19 @@
 
   .navigation__logo {
     margin: 0 auto;
-    padding: 22px;
+    padding: 9px 0 7px;
     order: 2;
     grid-column: auto;
+  }
+
+  .navigation__logo-image {
+    width: 149px;
+    height: 72px;
+  }
+
+  .site-navigation .navigation__item {
+    border-right: 1px solid $red-light;
+    text-align: start;
   }
 
   .navigation__list {
@@ -217,11 +234,6 @@
     position: relative;
     top: 0;
     grid-template-columns: 1fr 1fr;
-    order: 1;
-  }
-
-  .site-navigation .navigation__item {
-    text-align: start;
   }
 
   .user-navigation {

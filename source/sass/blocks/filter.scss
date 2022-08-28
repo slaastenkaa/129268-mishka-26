@@ -1,11 +1,223 @@
+.filter-group {
+  margin: 0;
+  margin-bottom: 31px;
+  padding: 0;
+  border: none;
+}
+
+.filter-group__title {
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+  color: $green;
+  text-transform: uppercase;
+}
+
+.filter-group__title::after {
+  content: "";
+  margin-left: 15px;
+  align-self: center;
+  width: 100%;
+  height: 1px;
+  background-color: $green;
+}
+
+.filter-group__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .filter-group__list {
+  margin: 0;
   list-style: none;
 }
 
-.filter__text {
-  margin-bottom: 30px;
+.radio-list,
+.checkbox-list {
+  padding-left: 60px;
+}
+
+.radio-item,
+.checkbox-item {
+  width: 40%;
+  margin-bottom: 35px;
+}
+
+// Форма ввода данных
+
+.form-list {
+  padding: 0;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 17px;
+}
+
+.form-input {
   @include text;
+  width: 100%;
+  margin-bottom: 21px;
+  padding-bottom: 15px;
+  border: none;
+  box-shadow: inset 0 -2px 0 $black;
+  font-size: 17px;
+  background-color: transparent;
+  outline: none;
+}
+
+.form-input:hover,
+.form-input:active {
+  box-shadow: inset 0 -2px 0 $palegreen-light;
+}
+
+.form-input:active {
+  color: $gray-dark;
+}
+
+.filter-group__icon {
+  position: absolute;
+  right: 30px;
+  color: $black;
+  opacity: 0.2;
+}
+
+.form-input:hover + .filter-group__icon {
+  fill: $palegreen-light;
+  opacity: 1;
+}
+
+.form-phone {
+  position: relative;
+}
+
+.filter-group__textarea {
+  @include text;
+  width: 100%;
+  min-height: 142px;
+  resize: none;
+  padding: 17px;
+  line-height: 18px;
+  font-size: 17px;
+  border: 2px solid $gray-dark;
+}
+
+.filter-group__textarea:hover,
+.filter-group__textarea:active {
+  border: 2px solid $palegreen-light;
+  outline: none;
+}
+
+.filter__text {
+  @include text;
+  margin: 0;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 16px;
   color: $gray-dark;
+}
+
+.filter__button {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .filter-group:not(:nth-child(2n+6)):not(:nth-child(1)):not(:nth-child(3n)) {
+    padding: 50px 0 20px;
+    background-color: $anti-flash-white;
+  }
+
+  .filter-group:nth-child(4) {
+    margin-bottom: 0;
+  }
+
+  .filter-group:nth-child(5) {
+    padding-top: 0;
+  }
+
+  .filter-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .filter-group__title::after {
+    display: none;
+  }
+
+  .filter-group__list {
+    grid-column: 2 / -1;
+  }
+
+  .checkbox-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: column;
+    column-gap: 15%;
+  }
+
+  .filter-group__container {
+    grid-column: 2/-1;
+  }
+
+  .filter-group__textarea {
+    grid-column: 2/-1;
+  }
+
+  .filter-container-order {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .filter__text {
+    margin: auto 0;
+    grid-column: 2;
+    text-align: end;
+  }
+
+  .filter__button {
+    width: max-content;
+    height: max-content;
+    padding: 18px 32px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-group__title {
+    justify-content: center;
+  }
+
+  .filter-container {
+    grid-template-columns: 0.5fr repeat(2, 1fr) 0.5fr;
+  }
+
+  .checkbox-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    column-gap: 4%;
+  }
+
+  .form-list {
+    grid-column: 2/4;
+  }
+
+  .contact-list {
+    grid-column: 2/4;
+  }
+
+  .filter-group__textarea {
+    grid-column: 2/4;
+  }
+
+  .filter-container-order {
+    max-width: 702px;
+  }
 }
