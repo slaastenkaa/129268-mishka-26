@@ -81,6 +81,11 @@
   .card__link-image {
     grid-column: 1;
     grid-row: 1 / 4;
+    padding: 0;
+  }
+
+  .card__image {
+    height: 100%;
   }
 }
 

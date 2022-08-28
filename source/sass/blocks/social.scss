@@ -27,6 +27,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer__social {
+    border: none;
+  }
+
   .social__list {
     gap: 10%;
   }

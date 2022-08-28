@@ -63,6 +63,13 @@
     background-position: 0%;
   }
 
+  @media (min-resolution: 2dppx) {
+    .reviews {
+      background-image: url("../img/lace@2x.jpg");
+      background-size: auto;
+    }
+  }
+
   .reviews::after {
     content: "";
     position: absolute;
