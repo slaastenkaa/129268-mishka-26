@@ -3,6 +3,11 @@
   background: $gray-extra-light url("../img/home-for-toys-mobile.jpg") no-repeat;
   background-position: 50% -77px;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/home-for-toys-mobile@2x.jpg");
+    background-size: auto;
+  }
 }
 
 .things-cute__title {
@@ -60,11 +65,11 @@
 @media (min-width: $tablet-width) {
   .things-cute {
     position: relative;
-    background-image: url("../img/home-for-toys.jpg");
+    background-image: url("../img/home-for-toys-tablet.jpg");
     background-size: auto;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/home-for-toys-desktop.jpg");
+      background-image: url("../img/home-for-toys-tablet@2x.jpg");
       background-size: auto;
     }
 
@@ -98,5 +103,18 @@
   .things-cute__item {
     flex-wrap: wrap;
     font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .things-cute {
+    position: relative;
+    background-image: url("../img/home-for-toys-desktop.jpg");
+    background-size: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/home-for-toys-desktop@2x.jpg");
+      background-size: auto;
+    }
   }
 }

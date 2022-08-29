@@ -113,9 +113,9 @@
         <li class="catalog__item card">
           <a class="card__link-image link" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="./img/laundry-basket-desktop.jpg 1x, ./img/laundry-basket-desktop.jpg 2x">
-              <source media="(min-width: 768px)" srcset="./img/laundry-basket-tablet.jpg 1x, ./img/laundry-basket-tablet.jpg 2x">
-              <img class="card__image" src="./img/laundry-basket-mobile.jpg" width="100%" height="195" srcset="./img/laundry-basket-mobile.jpg 2x"
+              <source media="(min-width: 1200px)" srcset="./img/laundry-basket-desktop.jpg 1x, ./img/laundry-basket-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/laundry-basket-tablet.jpg 1x, ./img/laundry-basket-tablet@2x.jpg 2x">
+              <img class="card__image" src="./img/laundry-basket-mobile.jpg" width="100%" height="195" srcset="./img/laundry-basket-mobile@2x.jpg 2x"
                 alt="Корзинка для белья">
             </picture>
           </a>
@@ -138,9 +138,9 @@
         <li class="catalog__item card">
           <a class="card__link-image link" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="./img/toy-basket-desktop.jpg 1x, ./img/toy-basket-desktop.jpg 2x">
-              <source media="(min-width: 768px)" srcset="./img/toy-basket-tablet.jpg 1x, ./img/toy-basket-tablet.jpg 2x">
-              <img class="card__image" src="./img/toy-basket-mobile.jpg" width="100%" height="195" srcset="./img/toy-basket-mobile.jpg 2x"
+              <source media="(min-width: 1200px)" srcset="./img/toy-basket-desktop.jpg 1x, ./img/toy-basket-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/toy-basket-tablet.jpg 1x, ./img/toy-basket-tablet@2x.jpg 2x">
+              <img class="card__image" src="./img/toy-basket-mobile.jpg" width="100%" height="195" srcset="./img/toy-basket-mobile@2x.jpg 2x"
                 alt="Большая корзинка для игрушек">
             </picture>
           </a>
@@ -166,8 +166,13 @@
       <div class="production__container">
         <h2 class="production__title">Процесс производства</h2>
         <div class="production__video">
-          <img class="production__video--image" src="./img/basket-mobile.jpg" width="100%" height="150" alt="Sorry, your browser doesn't support embedded videos,
-          but don't worry.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/basket-desktop.jpg 1x, ./img/basket-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/basket-tablet.jpg 1x, ./img/basket-tablet@2x.jpg 2x">
+            <img class="production__video--image" src="./img/basket-mobile.jpg" width="100%" height="150" srcset="./img/basket-mobile@2x.jpg 2x"
+              alt="Sorry, your browser doesn't support embedded videos,
+              but don't worry.">
+          </picture>
           </img>
           <button class="production__video--button button-play" type="button">
             <svg class="button-play__icon" width="101" height="77" aria-hidden="true" focusable="false"

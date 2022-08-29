@@ -59,13 +59,13 @@
   .reviews {
     position: relative;
     margin-bottom: 130px;
-    background: $white url("../img/lace.jpg") no-repeat;
+    background: $white url("../img/lace-tablet.jpg") no-repeat;
     background-position: 0%;
   }
 
   @media (min-resolution: 2dppx) {
     .reviews {
-      background-image: url("../img/lace@2x.jpg");
+      background-image: url("../img/lace-tablet@2x.jpg");
       background-size: auto;
     }
   }
@@ -129,7 +129,16 @@
 @media (min-width: $desktop-width) {
   .reviews {
     margin-bottom: 161px;
+    background: $white url("../img/lace-desktop.jpg") no-repeat;
     background-size: 40%;
+    background-position: 0%;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .reviews {
+      background-image: url("../img/lace-desktop@2x.jpg");
+      background-size: auto;
+    }
   }
 
   .reviews__container {
