@@ -2,11 +2,36 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15%;
   list-style: none;
 }
 
 .social__link {
   width: 28px;
   height: 22px;
+}
+
+.social__link--icon {
+  color: $black-ivory;
+}
+
+.social__link--icon:hover {
+  color: $palegreen;
+}
+
+.social__link--icon:active {
+  color: $palegreen;
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__social {
+    border: none;
+  }
+
+  .social__list {
+    gap: 10%;
+  }
 }

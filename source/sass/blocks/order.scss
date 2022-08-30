@@ -3,10 +3,11 @@
 }
 
 .order__form__title {
-  margin: 0;
-  margin-bottom: 68px;
-  padding: 73px 0;
   @include title;
+  position: relative;
+  margin: 0;
+  margin-bottom: 17px;
+  padding: 73px 0;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
@@ -14,14 +15,43 @@
 }
 
 .order__form-text {
+  @include text;
   margin-top: 17px;
   margin-bottom: 29px;
-  @include text;
   font-size: 13px;
   line-height: 24px;
   color: $gray-dark;
 }
 
-.order__form--filter {
-  display: grid;
+@media (min-width: $tablet-width) {
+  .order__form__title {
+    font-size: 43px;
+  }
+
+  .order__form__title::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    background-image: url("../img/icon-zigzag.png");
+    background-repeat: repeat-x;
+  }
+
+  .order__form-text {
+    margin: 0 auto 70px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__form__title {
+    font-size: 53px;
+  }
+
+  .order__form-text {
+    margin: 0 auto 80px;
+    max-width: 702px;
+  }
 }

@@ -23,8 +23,9 @@ body {
 }
 
 .container {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 img {
@@ -35,11 +36,13 @@ img {
 @media (min-width: $tablet-width) {
   .container {
     max-width: 668px;
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
     max-width: 1051px;
+    padding: 0;
   }
 }

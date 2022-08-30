@@ -1,22 +1,42 @@
+.card:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:active {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
 .card__link-image {
+  display: block;
   padding-bottom: 24px;
 }
 
-.card__image {
-  min-width: 100%;
-}
-
 .card__title {
-  padding-bottom: 6px;
   @include title;
+  margin: 0 28px;
+  margin-bottom: 6px;
+  padding: 0;
+  width: 200px;
+  height: max-content;
   font-size: 17px;
   line-height: 24px;
 }
 
+.card__title:hover {
+  opacity: 0.6;
+}
+
+.card__title:active {
+  opacity: 0.3;
+}
+
 .card__text {
-  margin-bottom: 41px;
-  padding-bottom: 17px;
   @include text;
+  margin: 0 28px;
+  margin-bottom: 15px;
+  padding: 0;
+  padding-bottom: 17px;
+  height: max-content;
   font-size: 13px;
   line-height: 30px;
   color: $gray-dark;
@@ -25,7 +45,10 @@
 
 .card__info {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  height: max-content;
+  margin: 0 28px;
 }
 
 .card__price {
@@ -36,11 +59,39 @@
 
 .card__button {
   border: none;
+  color: $black;
+  opacity: 0.2;
+}
+
+.card__button:hover {
+  color: $green;
+  opacity: 1;
+}
+
+.card__button:active {
+  color: $green-light;
+  opacity: 1;
 }
 
 @media (min-width: $tablet-width) {
+  .card__title {
+    margin-top: 27px;
+  }
+
   .card__link-image {
     grid-column: 1;
     grid-row: 1 / 4;
+    padding: 0;
+  }
+
+  .card__image {
+    height: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card__link-image {
+    grid-row: auto;
+    padding: 0;
   }
 }

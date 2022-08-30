@@ -1,0 +1,9 @@
+{
+  "icons": [
+    { "src": "./img/favicons/favicon-16x16.png", "type": "image/png", "sizes": "16x16" },
+    { "src": "./img/favicons/favicon-96x96.png", "type": "image/png", "sizes": "96x96" }
+  ],
+  "name": "Проект 'Мишка'",
+  "short_name": "'Мишка'",
+  "description": "Милые штуки ручной работы для дома."
+}
