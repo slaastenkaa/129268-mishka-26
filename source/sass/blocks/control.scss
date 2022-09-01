@@ -1,9 +1,9 @@
-.control-label {
+.control__span {
   position: relative;
   cursor: pointer;
 }
 
-.control-input__radio::before {
+.control__radio::before {
   content: "";
   position: absolute;
   top: -8px;
@@ -14,22 +14,22 @@
   border-radius: 50%;
 }
 
-.control-input:checked ~ .control-input__radio::before {
+.control__input:checked ~ .control__radio::before {
   background-image: url("../img/icon-circle.svg");
   background-repeat: no-repeat;
   background-size: 22px 22px;
   background-position: center;
 }
 
-.control-input__radio:hover::before {
+.control__radio:hover::before {
   border-color: $palegreen-light;
 }
 
-.control-input__radio:active::before {
+.control__radio:active::before {
   border-color: $black-light;
 }
 
-.control-input__checkbox::before {
+.control__checkbox::before {
   content: "";
   position: absolute;
   top: -8px;
@@ -39,17 +39,17 @@
   border: 2px solid $gray-dark;
 }
 
-.control-input:checked ~ .control-input__checkbox::before {
+.control__input:checked ~ .control__checkbox::before {
   background-image: url("../img/icon-chek.svg");
   background-repeat: no-repeat;
   background-size: 22px 22px;
   background-position: center;
 }
 
-.control-input__checkbox:hover::before {
+.control__checkbox:hover::before {
   border-color: $palegreen-light;
 }
 
-.control-input__checkbox:active::before {
+.control__checkbox:active::before {
   border-color: $black-light;
 }

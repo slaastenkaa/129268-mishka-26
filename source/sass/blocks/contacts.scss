@@ -11,6 +11,7 @@
   margin: 0;
   margin-bottom: 28px;
   font-size: 25px;
+  line-height: 1.2em;
 }
 
 .contacts__icon {
@@ -22,6 +23,7 @@
   grid-template-columns: max-content 1fr;
   margin: 0;
   margin-bottom: 62px;
+  row-gap: 1em;
 }
 
 .contacts__subtitle {
@@ -117,7 +119,7 @@
   }
 
   .contacts__container {
-    margin-bottom: 200px;
+    margin-bottom: 145px;
     padding-right: 40px;
   }
 
@@ -134,7 +136,6 @@
   .contacts__list {
     grid-template-columns: max-content 1fr;
     margin: 0;
-    row-gap: 30%;
   }
 
   .contacts__map {

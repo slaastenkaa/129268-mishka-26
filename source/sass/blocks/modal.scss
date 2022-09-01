@@ -4,6 +4,7 @@
 
 .modal {
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   // display: flex;
@@ -19,22 +20,27 @@
 
 .modal__container {
   position: relative;
+  margin: auto;
   padding: 28px 30px 46px;
+  border: 1px solid $gray-light;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   background-color: $white;
 }
 
 .modal__title {
-  margin: 0;
-  margin-bottom: 14px;
   @include title;
+  max-width: 150px;
+  margin: auto;
+  margin-bottom: 14px;
   font-size: 25px;
-  line-height: 30px;
+  line-height: 1.2em;
+  text-transform: uppercase;
   text-align: center;
 }
 
 .modal__text {
-  padding-bottom: 21px;
   @include text;
+  padding-bottom: 21px;
   font-size: 15px;
   line-height: 30px;
   color: $gray-dark;
@@ -46,7 +52,7 @@
   flex-direction: column;
 }
 
-.modal__cart--list {
+.modal__cart-list {
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -55,8 +61,32 @@
   list-style: none;
 }
 
-.modal__cart--item {
+.modal__control-span {
   padding: 18px 22px;
   background: $white;
-  border: 2px solid $green;
+  border: 2px solid $gray-dark-light;
 }
+
+.modal__control-span:hover {
+  border: 2px solid $gray-dark-opacity;
+}
+
+.modal__control-input:checked + .modal__control-span {
+  border: 2px solid $palegreen-light;
+}
+
+.modal__button {
+  color: $white;
+  background-color: $green;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .modal__title {
+    line-height: 1.9em;
+  }
+}
+
+// @media (min-width: $desktop-width) {
+
+// }

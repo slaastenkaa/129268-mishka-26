@@ -1,17 +1,22 @@
+.order__header {
+  position: relative;
+  display: flex;
+  margin: 0;
+  margin-bottom: 30px;
+  min-height: 176px;
+  background-color: $anti-flash-white;
+}
+
 .order__form {
   margin-bottom: 55px;
 }
 
-.order__form__title {
+.order__title {
   @include title;
-  position: relative;
-  margin: 0;
-  margin-bottom: 17px;
-  padding: 73px 0;
+  margin: auto;
   font-size: 27px;
-  line-height: 30px;
+  line-height: 1.1em;
   text-align: center;
-  background-color: $anti-flash-white;
 }
 
 .order__form-text {
@@ -28,7 +33,7 @@
     font-size: 43px;
   }
 
-  .order__form__title::after {
+  .order__header::after {
     content: "";
     position: absolute;
     bottom: -8px;
