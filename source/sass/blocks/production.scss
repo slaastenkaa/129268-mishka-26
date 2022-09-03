@@ -67,11 +67,11 @@
 }
 
 .production__button-play:hover {
-  transform: scale(1.2);
+  transform: translate(-50%, -50%) scale(1.2);
 }
 
-.production__button-pay:active {
-  transform: scale(0.8);
+.production__button-play:active {
+  transform: translate(-50%, -50%) scale(0.8);
   opacity: 0.3;
 }
 

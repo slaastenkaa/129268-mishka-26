@@ -52,20 +52,41 @@
   width: min-content;
 }
 
+.things-cute__icon {
+  color: #149080;
+  opacity: 0.5;
+}
+
 .things-cute__item:hover {
   transform: translateY(-5px);
   background-color: $sweet-garden;
+  box-shadow: 0 5px $sweet-garden;
+
+  .things-cute__icon {
+    opacity: 0.7;
+  }
 }
 
-.things-cute__list .things-cute__item:hover {
+.things-cute__item:active {
+  transform: translateY(-5px);
   background-color: $sweet-garden;
+  box-shadow: 0 5px $sweet-garden;
+
+  .things-cute__icon {
+    opacity: 0.3;
+  }
 }
 
 .things-cute__item:nth-child(2n) {
   background-color: $green-dark;
+  box-shadow: none;
 }
 
 .things-cute__item:nth-child(2n):hover {
+  background-color: $palegreen;
+}
+
+.things-cute__item:nth-child(2n):active {
   background-color: $palegreen;
 }
 

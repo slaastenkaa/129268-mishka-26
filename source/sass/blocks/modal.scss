@@ -1,21 +1,21 @@
-.modal-close {
-  display: none;
-}
-
 .modal {
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  // display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
   width: 100%;
   height: 100%;
   background: $white-opacity;
   border: 1px solid $gray-light;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25); /* Добавить цвет*/
+}
+
+.modal-close {
+  display: none;
 }
 
 .modal__container {
@@ -81,9 +81,28 @@
   border: none;
 }
 
+.modal__button:hover,
+.modal__button:active {
+  border: none;
+}
+
 @media (min-width: $tablet-width) {
+  .modal__container {
+    min-width: 566px;
+  }
+
   .modal__title {
+    max-width: 100%;
     line-height: 1.9em;
+  }
+
+  .modal__cart {
+    max-width: 350px;
+    margin: auto;
+  }
+
+  .modal__control-span {
+    padding: 18px 37px;
   }
 }
 
