@@ -1,15 +1,14 @@
-let navClose = document.querySelector('.navigation__closed');
+let navClose = document.querySelector('.page-header__closed');
 let navButton = document.querySelector('.navigation__button');
 
-navClose.classList.remove('navigation__nojs');
+navClose.classList.remove('page-header__nojs');
 
 navButton.addEventListener('click', function () {
-  if (navClose.classList.contains('navigation__opened')) {
-    navClose.classList.remove('navigation__opened');
-    navClose.classList.add('navigation__closed');
+  if (navClose.classList.contains('page-header__opened')) {
+    navClose.classList.remove('page-header__opened');
+    navClose.classList.add('page-header__closed');
   } else {
-    navClose.classList.add('navigation__opened');
-    navClose.classList.remove('navigation__closed');
+    navClose.classList.add('page-header__opened');
+    navClose.classList.remove('page-header__closed');
   }
 });
-

@@ -1,8 +1,13 @@
 .things-cute {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: auto;
   margin-bottom: 31px;
   background: $gray-extra-light url("../img/home-for-toys-mobile.jpg") no-repeat;
-  background-position: 50% -77px;
-  background-size: cover;
+  background-position: center 35px;
+  min-height: 570px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/home-for-toys-mobile@2x.jpg");
@@ -13,9 +18,7 @@
 .things-cute__title {
   @include title;
   max-width: 220px;
-  margin: 0 auto;
-  padding-top: 170px;
-  padding-bottom: 200px;
+  margin: auto;
   text-align: center;
   font-size: 27px;
 }
@@ -24,10 +27,14 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  background-color: $palegreen;
 }
 
-
 .things-cute__item {
+  background-color: $green;
+}
+
+.things-cute__link {
   display: flex;
   justify-content: space-between;
   padding: 23px 30px 18px;
@@ -35,25 +42,51 @@
   font-style: normal;
   font-weight: 700;
   font-size: 19px;
-  line-height: 24px;
   color: $white;
-  background-color: $green;
+  line-height: 24px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .things-cute__text {
   width: min-content;
 }
 
+.things-cute__icon {
+  color: #149080;
+  opacity: 0.5;
+}
+
 .things-cute__item:hover {
-  margin-top: -5px; // в мобилке прыгает фон
+  transform: translateY(-5px);
   background-color: $sweet-garden;
+  box-shadow: 0 5px $sweet-garden;
+
+  .things-cute__icon {
+    opacity: 0.7;
+  }
+}
+
+.things-cute__item:active {
+  transform: translateY(-5px);
+  background-color: $sweet-garden;
+  box-shadow: 0 5px $sweet-garden;
+
+  .things-cute__icon {
+    opacity: 0.3;
+  }
 }
 
 .things-cute__item:nth-child(2n) {
   background-color: $green-dark;
+  box-shadow: none;
 }
 
 .things-cute__item:nth-child(2n):hover {
+  background-color: $palegreen;
+}
+
+.things-cute__item:nth-child(2n):active {
   background-color: $palegreen;
 }
 
@@ -65,8 +98,10 @@
 @media (min-width: $tablet-width) {
   .things-cute {
     position: relative;
+    min-height: 690px;
     background-image: url("../img/home-for-toys-tablet.jpg");
     background-size: auto;
+    background-position: center bottom 5px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/home-for-toys-tablet@2x.jpg");
@@ -93,11 +128,8 @@
 
   .things-cute__title {
     max-width: 500px;
-    padding-top: 109px;
-    padding-bottom: 372px;
     font-size: 43px;
     line-height: 50px;
-    background-position: 50% 58px;
   }
 
   .things-cute__item {

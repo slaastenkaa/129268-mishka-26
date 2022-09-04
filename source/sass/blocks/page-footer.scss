@@ -7,11 +7,15 @@
   display: none;
 }
 
-.page-footer__logo--icon:hover {
+.page-footer__logo-icon {
+  color: $black;
+}
+
+.page-footer__logo-icon:hover {
   color: $palegreen;
 }
 
-.page-footer__logo--icon:active {
+.page-footer__logo-icon:active {
   color: $palegreen;
   opacity: 0.3;
 }

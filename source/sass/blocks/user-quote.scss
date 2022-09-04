@@ -1,7 +1,7 @@
 .user-quote__text {
+  @include text;
   margin: 0;
   padding-bottom: 33px;
-  @include text;
   font-size: 15px;
   line-height: 30px;
   color: $gray-dark;

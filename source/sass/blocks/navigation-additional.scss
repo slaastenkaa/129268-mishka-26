@@ -1,4 +1,4 @@
-.navigation-additional__inner {
+.nav-inner {
   background-color: $anti-flash-white;
 }
 
@@ -44,7 +44,7 @@
     padding-top: 21px;
   }
 
-  .navigation-additional__item .navigation__link {
+  .navigation-additional__item .navigation-additional__link {
     font-size: 15px;
   }
 
@@ -56,11 +56,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .navigation-additional {
+  .navigation-additional__container {
     grid-template-columns: 1fr 1fr;
   }
 
-  .navigation-additional__item .navigation__link {
+  .navigation-additional__item .navigation-additional__link {
     font-size: 17px;
   }
 

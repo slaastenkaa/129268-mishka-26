@@ -2,6 +2,9 @@
   margin: 0;
   margin-bottom: 31px;
   padding: 0;
+}
+
+.filter-container {
   border: none;
 }
 
@@ -17,8 +20,8 @@
   content: "";
   margin-left: 15px;
   align-self: center;
-  width: 100%;
   height: 1px;
+  flex-grow: 1;
   background-color: $green;
 }
 
@@ -151,22 +154,23 @@
   }
 
   .filter-group__list {
+    margin-top: -52px;
     grid-column: 2 / -1;
   }
 
   .checkbox-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-auto-flow: column;
     column-gap: 15%;
   }
 
   .filter-group__container {
+    margin-top: -52px;
     grid-column: 2/-1;
   }
 
   .filter-group__textarea {
+    margin-top: -52px;
     grid-column: 2/-1;
   }
 
@@ -191,18 +195,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .filter-group__title {
-    justify-content: center;
-  }
-
   .filter-container {
     grid-template-columns: 0.5fr repeat(2, 1fr) 0.5fr;
   }
 
   .checkbox-list {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
-    column-gap: 4%;
   }
 
   .form-list {
