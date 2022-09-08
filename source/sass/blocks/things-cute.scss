@@ -5,13 +5,16 @@
   position: relative;
   width: auto;
   margin-bottom: 31px;
-  background: $gray-extra-light url("../img/home-for-toys-mobile.jpg") no-repeat;
-  background-position: center 35px;
-  min-height: 570px;
+  background-color: $gray-extra-light;
+  background-image: url("../img/home-for-toys-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center -2px;
+  min-height: 489px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/home-for-toys-mobile@2x.jpg");
-    background-size: auto;
+    background-size: contain;
+    background-position: center -19px;
   }
 }
 
@@ -37,7 +40,8 @@
 .things-cute__link {
   display: flex;
   justify-content: space-between;
-  padding: 23px 30px 18px;
+  align-items: end;
+  padding: 3px 30px 15px;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -53,8 +57,14 @@
 }
 
 .things-cute__icon {
+  margin: auto 0;
   color: #149080;
   opacity: 0.5;
+}
+
+.icon-interior {
+  margin-right: 6px;
+  margin-bottom: 4px;
 }
 
 .things-cute__item:hover {

@@ -9,7 +9,7 @@
 .navigation__logo {
   margin: auto;
   padding: 22px;
-  padding-left: 38px;
+  padding-left: 20px;
   grid-column: 2;
 }
 
@@ -30,7 +30,7 @@
   justify-self: flex-end;
   position: absolute;
   top: 32px;
-  right: 4px;
+  right: 21px;
   width: 30px;
   height: 17px;
   padding: 0;
@@ -207,7 +207,7 @@
 
 @media (min-width: $desktop-width) {
   .navigation {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 0.5fr 1fr;
   }
 
   .navigation__logo {
