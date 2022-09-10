@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15%;
+  gap: 11%;
   list-style: none;
 }
 
@@ -14,15 +14,15 @@
 }
 
 .social__link-icon {
-  color: $black-ivory;
+  fill: $black-ivory;
 }
 
 .social__link-icon:hover {
-  color: $palegreen;
+  fill: $palegreen;
 }
 
 .social__link-icon:active {
-  color: $palegreen;
+  fill: $palegreen;
   opacity: 0.3;
 }
 
@@ -32,6 +32,6 @@
   }
 
   .social__list {
-    gap: 10%;
+    gap: 8%;
   }
 }

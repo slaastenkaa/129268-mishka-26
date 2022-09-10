@@ -53,8 +53,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: 10px;
-    width: 20px;
+    top: 6px;
+    left: -3px;
+    width: 26px;
     height: 2px;
     background-color: $black;
   }
@@ -77,7 +78,7 @@
 }
 
 .navigation__item {
-  padding: 30px 0 30px;
+  padding: 26px 0 23px;
   text-align: center;
   box-shadow: inset 0 1px 0 $red-light;
 }
@@ -100,12 +101,12 @@
 }
 
 .navigation__link:hover .navigation__link-icon {
-  color: $green;
+  fill: $green;
   opacity: 0.6;
 }
 
 .navigation__link:active .navigation__link-icon {
-  color: $green-light;
+  fill: $green-light;
   opacity: 1;
 }
 
@@ -126,13 +127,13 @@
   .navigation__list {
     position: absolute;
     z-index: 1;
-    top: 100%;
+    top: 97%;
     width: 100%;
     background-color: $white;
   }
 
   .user-navigation {
-    top: 315%;
+    top: 290%;
   }
 
   .page-header .container {
@@ -150,12 +151,12 @@
 
 @media (min-width: $tablet-width) {
   .navigation {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.8fr 1fr;
   }
 
   .navigation__logo {
     margin: 0;
-    padding: 22px 0 20px;
+    padding: 22px 0 17px;
     grid-column: 1;
   }
 
@@ -173,30 +174,41 @@
   }
 
   .navigation__item {
+    padding: 29px 0 26px;
     box-shadow: none;
   }
 
   .navigation__cart {
-    padding-left: 15px;
+    padding-left: 33px;
+  }
+
+  .navigation__cart--text {
+    margin-left: 25px;
   }
 
   .site-navigation {
     display: grid;
     position: absolute;
     top: 80px;
-    gap: 5%;
-    grid-template-columns: max-content max-content;
+    gap: 1.8rem;
+    grid-template-columns: 1fr 1fr;
+    letter-spacing: -1px;
     z-index: 1;
+  }
+
+  .site-navigation .navigation__item {
+    padding: 26px 0;
   }
 
   .user-navigation {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 0.65fr 2fr;
     grid-column: 2/4;
     margin-left: auto;
   }
 
   .user-navigation .navigation__item {
+    margin: auto 0;
     border-left: 1px solid $red-light;
   }
 
@@ -212,7 +224,7 @@
 
   .navigation__logo {
     margin: 0 auto;
-    padding: 9px 0 7px;
+    padding: 9px 0 4px;
     order: 2;
     grid-column: auto;
   }
@@ -235,7 +247,8 @@
     display: grid;
     position: relative;
     top: 0;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.9fr 1fr;
+    gap: 2rem;
   }
 
   .user-navigation {
@@ -243,6 +256,15 @@
   }
 
   .navigation__cart {
-    padding-left: 25px;
+    padding-left: 29px;
+  }
+
+  .navigation__cart--text {
+    margin-left: 29px;
+  }
+
+  .info-navigation {
+    grid-template-columns: 0.9fr 1fr;
+    gap: 2rem;
   }
 }

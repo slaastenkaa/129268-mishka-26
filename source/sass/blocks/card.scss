@@ -82,6 +82,9 @@
 
 @media (min-width: $tablet-width) {
   .card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding: 0 30px;
   }
 
@@ -92,7 +95,7 @@
   }
 
   .card__text {
-    padding-bottom: 70%;
+    padding-bottom: 40%;
   }
 }
 

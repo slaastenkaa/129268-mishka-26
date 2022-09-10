@@ -44,7 +44,6 @@
 
 .radio-item,
 .checkbox-item {
-  width: 40%;
   margin-bottom: 35px;
 }
 
@@ -149,6 +148,10 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
+  .filter-group__title {
+    width: 25%;
+  }
+
   .filter-group__title::after {
     display: none;
   }
@@ -186,7 +189,7 @@
   }
 
   .filter__button {
-    width: max-content;
+    width: auto;
     height: max-content;
     padding: 18px 32px;
     grid-column: 1;

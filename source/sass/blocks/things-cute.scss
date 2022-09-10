@@ -4,24 +4,23 @@
   justify-content: space-between;
   position: relative;
   width: auto;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
   background-color: $gray-extra-light;
   background-image: url("../img/home-for-toys-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center -2px;
-  min-height: 489px;
+  min-height: 486px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/home-for-toys-mobile@2x.jpg");
     background-size: contain;
-    background-position: center -19px;
+    background-position: center 4px;
   }
 }
 
 .things-cute__title {
   @include title;
-  max-width: 220px;
-  margin: auto;
+  margin: 22% auto;
   text-align: center;
   font-size: 27px;
 }
@@ -40,8 +39,8 @@
 .things-cute__link {
   display: flex;
   justify-content: space-between;
-  align-items: end;
-  padding: 3px 30px 15px;
+  align-items: flex-end;
+  padding: 5px 30px 12px;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -64,7 +63,7 @@
 
 .icon-interior {
   margin-right: 6px;
-  margin-bottom: 4px;
+  margin-top: 8%;
 }
 
 .things-cute__item:hover {
@@ -108,14 +107,16 @@
 @media (min-width: $tablet-width) {
   .things-cute {
     position: relative;
-    min-height: 690px;
+    min-height: 705px;
+    margin-bottom: 47px;
     background-image: url("../img/home-for-toys-tablet.jpg");
     background-size: auto;
     background-position: center bottom 5px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/home-for-toys-tablet@2x.jpg");
-      background-size: auto;
+      background-size: contain;
+      background-position: center bottom 40px;
     }
 
     .things-cute__list {
@@ -137,14 +138,25 @@
   }
 
   .things-cute__title {
-    max-width: 500px;
+    max-width: 530px;
+    margin: 15% auto;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .things-cute__title br {
+    display: none;
   }
 
   .things-cute__item {
     flex-wrap: wrap;
     font-size: 20px;
+  }
+
+  .things-cute__link {
+    padding: 8px 25px 17px 42px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
   }
 }
 
@@ -158,5 +170,16 @@
       background-image: url("../img/home-for-toys-desktop@2x.jpg");
       background-size: auto;
     }
+  }
+
+  .things-cute__title {
+    max-width: 630px;
+    margin: 10% auto;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .things-cute__text {
+    width: fit-content;
   }
 }

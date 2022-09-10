@@ -8,29 +8,30 @@
 }
 
 .page-footer__logo-icon {
-  color: $black;
+  fill: $black;
 }
 
 .page-footer__logo-icon:hover {
-  color: $palegreen;
+  fill: $palegreen;
 }
 
 .page-footer__logo-icon:active {
-  color: $palegreen;
+  fill: $palegreen;
   opacity: 0.3;
 }
 
 .page-footer__social {
   width: 100%;
-  margin-top: 25px;
-  margin-bottom: 58px;
-  padding-bottom: 30px;
+  margin-top: 27px;
+  margin-bottom: 18px;
+  padding-bottom: 27px;
   border-bottom: 1px solid $gray;
 }
 
 .page-footer__copyright {
   display: flex;
   justify-content: center;
+  gap: 9%;
   align-items: center;
   margin-bottom: 22px;
 }
@@ -40,7 +41,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 51px 0 58px;
+    padding: 50px 0 58px;
   }
 
   .page-footer__logo {
@@ -49,6 +50,7 @@
 
   .page-footer__social {
     margin: 0 auto;
+    margin-right: 10px;
     padding: 0;
   }
 }

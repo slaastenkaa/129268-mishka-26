@@ -6,21 +6,25 @@
 }
 
 .copyright__link-icon {
-  color: $green;
+  margin-top: 3px;
+  fill: $green;
 }
 
 .copyright__link-icon:hover {
-  color: $palegreen;
+  fill: $palegreen;
 }
 
 .copyright__link-icon:active {
-  color: $palegreen;
+  fill: $palegreen;
   opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__copyright {
     margin: 0;
+    margin-right: 10px;
     padding: 0;
+    gap: 14%;
+    align-items: inherit;
   }
 }
