@@ -141,8 +141,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .advantages {
+    margin-bottom: 31px;
+  }
+
   .advantages__title {
-    margin-bottom: 39px;
+    margin-bottom: 37px;
+    font-size: 53px;
   }
 
   .advantages__container {

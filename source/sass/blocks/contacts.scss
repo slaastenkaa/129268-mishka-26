@@ -135,23 +135,35 @@
   }
 
   .contacts__container {
-    margin-bottom: 145px;
-    padding-right: 40px;
+    margin-top: 4.8rem;
+    margin-bottom: 5.3rem;
+    margin-right: 4.5rem;
   }
 
   .contacts__title {
     grid-column: 2;
+    margin-bottom: 1.9rem;
     font-size: 53px;
   }
 
   .contacts__icon {
-    left: -100px;
+    top: -1rem;
     right: auto;
+    left: -7rem;
   }
 
   .contacts__list {
     grid-template-columns: max-content 1fr;
     margin: 0;
+    column-gap: 1.3em;
+  }
+
+  .contacts__description {
+    max-width: 80%;
+  }
+
+  .contacts__mail {
+    padding-bottom: 7px;
   }
 
   .contacts__map {
@@ -164,6 +176,6 @@
     grid-row: 2;
     height: max-content;
     margin-right: 120px;
-    padding: 16px 27px;
+    padding: 14px 39px;
   }
 }

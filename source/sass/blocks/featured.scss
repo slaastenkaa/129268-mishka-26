@@ -101,7 +101,8 @@
   }
 
   .featured::after {
-    bottom: -76px;
+    left: -21px;
+    bottom: -75px;
     background-image: url("../img/icon-line.png");
   }
 
@@ -167,22 +168,34 @@
 }
 
 @media (min-width: $desktop-width) {
+  .featured {
+    margin-bottom: 161px;
+  }
+
+  .featured::after {
+    width: 85.5%;
+    left: 5.5rem;
+    bottom: -97px;
+    background-image: url("../img/icon-line-desktop.png");
+  }
+
   .featured__header {
     position: absolute;
     display: grid;
-    grid-template-columns: 27% 1fr;
-    top: 61px;
+    grid-template-columns: 25% 90%;
+    top: 71px;
+    column-gap: 2%;
     z-index: 1;
   }
 
   .featured__title {
-    width: 95%;
+    width: 90%;
     order: 1;
     font-size: 53px;
   }
 
   .featured__subtitle {
-    margin: 0 auto;
+    margin: 13px auto;
     text-align: center;
   }
 
@@ -192,13 +205,19 @@
 
   .featured__text {
     width: 57%;
-    margin-top: 160px;
-    margin-left: 176px;
+    margin-top: 10.5rem;
+    margin-left: 11rem;
+    margin-bottom: 3.5rem;
     padding-bottom: 0;
   }
 
   .featured__list {
-    margin-left: 176px;
+    margin-right: 3.7rem;
+    margin-left: 11rem;
+    margin-bottom: 7rem;
+    grid-template-columns: 0.8fr 2fr;
+    row-gap: 3%;
+    column-gap: 8%;
   }
 
   .featured__image {
@@ -206,6 +225,15 @@
   }
 
   .featured__order {
-    margin-left: 176px;
+    margin-right: 3.7rem;
+    margin-left: 11rem;
+  }
+
+  .featured__options {
+    padding-bottom: 13px;
+  }
+
+  .featured__price {
+    padding-bottom: 32px;
   }
 }

@@ -9,7 +9,7 @@
   background-image: url("../img/home-for-toys-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center -2px;
-  min-height: 486px;
+  min-height: 489px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/home-for-toys-mobile@2x.jpg");
@@ -20,7 +20,7 @@
 
 .things-cute__title {
   @include title;
-  margin: 22% auto;
+  margin: 23% auto;
   text-align: center;
   font-size: 27px;
 }
@@ -40,7 +40,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 5px 30px 12px;
+  padding: 6px 30px 11px;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -129,7 +129,7 @@
       content: "";
       position: absolute;
       bottom: -8px;
-      left: 0;
+      left: -15px;
       width: 100%;
       height: 24px;
       background-image: url("../img/icon-zigzag.png");
@@ -163,6 +163,7 @@
 @media (min-width: $desktop-width) {
   .things-cute {
     position: relative;
+    margin-bottom: 53px;
     background-image: url("../img/home-for-toys-desktop.jpg");
     background-size: auto;
 
@@ -172,14 +173,32 @@
     }
   }
 
+  .things-cute__list::after {
+    background-image: url("../img/icon-zigzag-desktop.png");
+  }
+
   .things-cute__title {
     max-width: 630px;
-    margin: 10% auto;
+    margin: 7.1rem auto;
     font-size: 53px;
     line-height: 57px;
   }
 
+  .things-cute__link {
+    padding: 8px 25px 18px 38px;
+  }
+
   .things-cute__text {
-    width: fit-content;
+    max-width: fit-content;
+  }
+
+  .icon-interior {
+    margin-top: 23px;
+    margin-right: 12px;
+  }
+
+  .icon-toy {
+    margin-top: 23px;
+    margin-right: 10px;
   }
 }

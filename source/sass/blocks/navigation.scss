@@ -10,6 +10,7 @@
   margin: auto;
   padding: 22px;
   padding-left: 20px;
+  padding-bottom: 19px;
   grid-column: 2;
 }
 
@@ -127,13 +128,30 @@
   .navigation__list {
     position: absolute;
     z-index: 1;
-    top: 97%;
+    top: 100%;
     width: 100%;
     background-color: $white;
   }
 
+  .site-navigation .navigation__item {
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+    text-align: start;
+  }
+
   .user-navigation {
-    top: 290%;
+    top: 300%;
+  }
+
+  .user-navigation .navigation__item {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: start;
+  }
+
+  .navigation__search-text,
+  .navigation__cart--text {
+    padding-left: 1.4rem;
   }
 
   .page-header .container {
@@ -261,10 +279,5 @@
 
   .navigation__cart--text {
     margin-left: 29px;
-  }
-
-  .info-navigation {
-    grid-template-columns: 0.9fr 1fr;
-    gap: 2rem;
   }
 }

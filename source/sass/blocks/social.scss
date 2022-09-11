@@ -35,3 +35,9 @@
     gap: 8%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    gap: 4%;
+  }
+}

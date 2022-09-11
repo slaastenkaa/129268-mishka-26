@@ -86,7 +86,7 @@
   }
 
   .reviews::after {
-    content: "";
+    left: -22px;
     bottom: -90px;
     background-image: url("../img/icon-line.png");
   }
@@ -143,10 +143,10 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    margin-bottom: 161px;
+    margin-bottom: 162px;
     background: $white url("../img/lace-desktop.jpg") no-repeat;
-    background-size: 40%;
-    background-position: 0%;
+    background-size: 28.5%;
+    background-position: left 5.5rem center;
   }
 
   @media (min-resolution: 2dppx) {
@@ -156,12 +156,23 @@
     }
   }
 
+  .reviews::after {
+    width: 85.5%;
+    left: 5.5rem;
+    bottom: -92px;
+    background-image: url("../img/icon-line-desktop.png");
+  }
+
   .reviews__container {
-    padding: 78px 0 96px;
-    padding-left: 176px;
+    padding: 80px 0 103px 176px;
+    row-gap: 14%;
   }
 
   .reviews__title {
     font-size: 53px;
+  }
+
+  .reviews__item .user-quote__text {
+    padding-bottom: 45px;
   }
 }
