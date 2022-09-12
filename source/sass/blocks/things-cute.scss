@@ -8,13 +8,13 @@
   background-color: $gray-extra-light;
   background-image: url("../img/home-for-toys-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center -2px;
+  background-position: center bottom 132px;
   min-height: 489px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/home-for-toys-mobile@2x.jpg");
     background-size: contain;
-    background-position: center 4px;
+    background-position: center bottom 179px;
   }
 }
 

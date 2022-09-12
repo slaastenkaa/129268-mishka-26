@@ -1,31 +1,33 @@
-.control__span {
+.radio-label,
+.control__checkbox {
   position: relative;
   cursor: pointer;
+  line-height: 18px;
 }
 
-.control__radio::before {
+.radio-label::before {
   content: "";
   position: absolute;
-  top: -8px;
-  left: -58px;
+  top: -2px;
+  left: -60px;
   width: 42px;
   height: 42px;
   border: 2px solid $gray-dark;
   border-radius: 50%;
 }
 
-.control__input:checked ~ .control__radio::before {
+.radio-input:checked + .radio-label::before {
   background-image: url("../img/icon-circle.svg");
   background-repeat: no-repeat;
-  background-size: 22px 22px;
+  background-size: 18px 18px;
   background-position: center;
 }
 
-.control__radio:hover::before {
+.radio-label:hover::before {
   border-color: $palegreen-light;
 }
 
-.control__radio:active::before {
+.radio-label:active::before {
   border-color: $black-light;
 }
 
@@ -52,4 +54,37 @@
 
 .control__checkbox:active::before {
   border-color: $black-light;
+}
+
+@media (min-width: $tablet-width) {
+  .radio-label::before {
+    top: -13px;
+    left: -76px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .radio-input:checked + .radio-label::before {
+    background-size: 21px 21px;
+  }
+
+  .control__checkbox::before {
+    top: -11px;
+    left: -79px;
+    width: 51px;
+    height: 51px;
+  }
+
+  .radio-label,
+  .control__checkbox {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .control__checkbox::before {
+    top: -13px;
+    left: -81px;
+  }
 }

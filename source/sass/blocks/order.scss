@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 19px;
   min-height: 176px;
   background-color: $anti-flash-white;
 }
@@ -22,15 +22,26 @@
 .order__form-text {
   @include text;
   margin-top: 17px;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
   font-size: 13px;
   line-height: 24px;
   color: $gray-dark;
 }
 
 @media (min-width: $tablet-width) {
-  .order__form__title {
+  .order__form {
+    margin-bottom: 50px;
+  }
+
+  .order__header {
+    min-height: 186px;
+    margin-bottom: 3.9rem;
+  }
+
+  .order__title {
+    margin-top: 3.5rem;
     font-size: 43px;
+    line-height: 50px;
   }
 
   .order__header::after {
@@ -45,18 +56,31 @@
   }
 
   .order__form-text {
-    margin: 0 auto 70px;
+    margin: 0 auto 25px;
     font-size: 17px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .order__form__title {
+  .order__header {
+    min-height: 215px;
+    margin-bottom: 6.9rem;
+  }
+
+  .order__header::after {
+    bottom: -2px;
+    left: 0;
+    background-image: url("../img/icon-zigzag-desktop.png");
+  }
+
+  .order__title {
     font-size: 53px;
+    line-height: 57px;
   }
 
   .order__form-text {
-    margin: 0 auto 80px;
+    margin: 0 auto 49px;
     max-width: 702px;
   }
 }

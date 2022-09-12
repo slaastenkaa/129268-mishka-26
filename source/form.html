@@ -60,27 +60,31 @@
       <p class="order__form-text container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
         заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="order__form--filter filter" action="https://echo.htmlacademy.ru/" method="get">
-        <div class="filter-group">
-          <fieldset class="filter-container container">
+        <div class="filter-group radio">
+          <fieldset class="filter-container radio-container container">
             <legend class="filter-group__title">Тип</legend>
             <ul class="filter-group__list radio-list">
-              <li class="filter-group__item radio-item"><label class="control"><input
-                    class="visually-hidden control__input" type="radio" name="type" value="Аксессуар для интерьера"
-                    checked="checked"> <span class="control__span control__radio">Аксессуар для интерьера</span></label>
+              <li class="filter-group__item radio-item">
+                  <input class="visually-hidden radio-input" type="radio" id="accessories" name="type" value="Аксессуар для интерьера" checked="checked">
+                  <label class="radio-label" for="accessories">Аксессуар для интерьера</label>
               </li>
-              <li class="filter-group__item radio-item"><label class="control"><input
-                    class="visually-hidden control__input" type="radio" name="type" value="Детская игрушка"> <span
-                    class="control__span control__radio">Детская игрушка</span></label></li>
+              <li class="filter-group__item radio-item">
+                <input class="visually-hidden radio-input" type="radio" id="toy" name="type" value="Детская игрушка">
+                <label class="radio-label" for="toy">Детская игрушка</label>
+              </li>
             </ul>
           </fieldset>
         </div>
-        <div class="filter-group">
-          <fieldset class="filter-container container">
+        <div class="filter-group checkbox">
+          <fieldset class="filter-container checkbox-container container">
             <legend class="filter-group__title">Цвет</legend>
             <ul class="filter-group__list checkbox-list">
-              <li class="filter-group__item checkbox-item"><label class="control"><input
-                    class="visually-hidden control__input" type="checkbox" name="color" value="Белый" checked=""> <span
-                    class="control__span control__checkbox">Белый</span></label></li>
+              <li class="filter-group__item checkbox-item">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="checkbox" name="color" value="Белый" checked="">
+                  <span class="control__span control__checkbox">Белый</span>
+                </label>
+              </li>
               <li class="filter-group__item checkbox-item"><label class="control"><input
                     class="visually-hidden control__input" type="checkbox" name="color" value="Серый" checked=""> <span
                     class="control__span control__checkbox">Серый</span></label></li>
@@ -99,25 +103,29 @@
             </ul>
           </fieldset>
         </div>
-        <div class="filter-group">
-          <fieldset class="filter-container container">
-            <legend class="filter-group__title">ФИО</legend>
+        <div class="filter-group form">
+          <fieldset class="filter-container form-container container">
+            <legend class="filter-group__title form-title">ФИО</legend>
             <ul class="filter-group__list form-list">
-              <li class="filter-group__item form-item"><label class="filter-group__label form-label"
-                  for="login-field-name">Имя:</label> <input class="filter-group__input form-input" type="text"
+              <li class="filter-group__item form-item">
+                <label class="filter-group__label form-label title"
+                  for="login-field-name">Имя:</label>
+                  <input class="filter-group__input form-input" type="text"
                   name="Name" id="login-field-name" required="" placeholder="Введите ваше имя*"></li>
-              <li class="filter-group__item form-item"><label class="filter-group__label form-label"
+              <li class="filter-group__item form-item">
+                <label class="filter-group__label form-label title"
                   for="login-field-surname">Фамилия:</label> <input class="filter-group__input form-input" type="text"
                   name="Surname" id="login-field-surname" required="" placeholder="Укажите фамилию*"></li>
-              <li class="filter-group__item form-item"><label class="filter-group__label form-label"
+              <li class="filter-group__item form-item">
+                <label class="filter-group__label form-label title"
                   for="login-field-patronymic">Отчество:</label> <input class="filter-group__input form-input"
                   type="text" name="Middle namen" id="login-field-patronymic" placeholder="Отчество, если желаете"></li>
             </ul>
           </fieldset>
         </div>
-        <div class="filter-group">
-          <fieldset class="filter-container container">
-            <legend class="filter-group__title">тел</legend>
+        <div class="filter-group contact">
+          <fieldset class="filter-container contact-container container">
+            <legend class="filter-group__title contact-title">тел</legend>
             <div class="filter-group__container contact-list">
               <label class="visually-hidden" for="login-field-tel">Ваш
                 телефон</label>
@@ -128,10 +136,8 @@
                 <use xlink:href="./img/sprite.svg#icon-phone"></use>
               </svg></div>
           </fieldset>
-        </div>
-        <div class="filter-group">
-          <fieldset class="filter-container container">
-            <legend class="filter-group__title">E-mail</legend>
+          <fieldset class="filter-container contact-container container">
+            <legend class="filter-group__title contact-title">E-mail</legend>
             <div class="filter-group__container contact-list"><label class="visually-hidden"
                 for="login-field-email">Ваша почта</label> <input class="filter-group__input form-input form-mail"
                 type="email" name="Email" id="login-field-email" required="" placeholder="Ваш Email*"> <svg
@@ -141,9 +147,10 @@
               </svg></div>
           </fieldset>
         </div>
-        <div class="filter-group">
-          <fieldset class="filter-container container">
-            <legend class="filter-group__title">Доп</legend><textarea class="filter-group__textarea" name="text"
+        <div class="filter-group aside">
+          <fieldset class="filter-container aside-container container">
+            <legend class="filter-group__title aside-title">Доп</legend>
+            <textarea class="filter-group__textarea" name="text"
               rows="5" cols="30" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
         </div>
