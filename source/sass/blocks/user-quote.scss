@@ -21,10 +21,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .user-quote__text br {
-    display: none;
-  }
-
   .user-quote__author {
     letter-spacing: 0.6px;
   }

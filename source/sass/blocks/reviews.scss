@@ -145,8 +145,7 @@
   .reviews {
     margin-bottom: 162px;
     background: $white url("../img/lace-desktop.jpg") no-repeat;
-    background-size: 28.5%;
-    background-position: left 5.5rem center;
+    background-position: left 3.2rem center;
   }
 
   @media (min-resolution: 2dppx) {
@@ -157,8 +156,8 @@
   }
 
   .reviews::after {
-    width: 85.5%;
-    left: 5.5rem;
+    width: 91.5%;
+    left: 3rem;
     bottom: -92px;
     background-image: url("../img/icon-line-desktop.png");
   }

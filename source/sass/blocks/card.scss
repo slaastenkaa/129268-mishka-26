@@ -16,18 +16,21 @@
 }
 
 .card__info {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-around;
-  padding: 0 28px;
+  padding: 10px 28px 10px;
+}
+
+.card__link-text {
+  display: block;
+  margin-top: 0.82rem;
+  padding-bottom: 17px;
+  border-bottom: 1px solid $red-light;
 }
 
 .card__title {
   @include title;
   margin: 0;
-  margin-top: 25px;
+  margin-bottom: 0.4rem;
   padding: 0;
-  padding-bottom: 3%;
   font-size: 17px;
   line-height: 24px;
 }
@@ -44,11 +47,9 @@
   @include text;
   margin: 0;
   padding: 0;
-  padding-bottom: 16px;
   font-size: 13px;
   line-height: 30px;
   color: $gray-dark;
-  border-bottom: 1px solid $red-light;
 }
 
 .card__order {
@@ -56,7 +57,7 @@
   justify-content: space-between;
   align-items: center;
   height: max-content;
-  margin: 24px 0 26px;
+  margin: 22px 0 18px;
 }
 
 .card__price {
@@ -86,14 +87,20 @@
   .card__info {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0 33px;
+    grid-row: 1/4;
   }
 
   .card__link-image {
     max-height: 462px;
     grid-column: 1;
     grid-row: 1 / 4;
+  }
+
+  .card__link-text {
+    margin-top: 1.7rem;
+    flex-grow: 1;
   }
 
   .card__title {
@@ -103,14 +110,13 @@
   }
 
   .card__text {
-    // padding-bottom: 10.7rem; у последнего не корректно
     font-size: 15px;
     line-height: 30px;
   }
 
-  // .card__text:nth-child(3) {
-  //   padding-bottom: 9.3rem;
-  // }
+  .card__order {
+    margin: 25px 0 27px;
+  }
 
   .card__price {
     font-size: 17px;
@@ -120,16 +126,19 @@
 
 @media (min-width: $desktop-width) {
   .card__info {
-    padding: 0 29px;
-    justify-content: flex-start;
+    grid-row: auto;
+    padding: 15px 29px;
   }
 
   .card__title {
     margin: 0;
+    margin-bottom: 3%;
     padding: 0;
   }
 
-  .card__text {
-    padding-bottom: 13%;
+  .card__link-text {
+    min-height: 6rem;
+    margin-top: 0.7rem;
+    padding: 0;
   }
 }

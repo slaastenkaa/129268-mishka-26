@@ -22,9 +22,10 @@
 
 .catalog__item {
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   height: max-content;
   min-height: 195px;
+  overflow: hidden;
   border: 1px solid $red-light;
 }
 
@@ -86,6 +87,6 @@
   .catalog__item {
     margin: 0;
     grid-template-columns: auto;
-    min-height: 659px;
+    height: 41.3rem;
   }
 }

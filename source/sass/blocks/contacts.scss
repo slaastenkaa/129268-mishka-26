@@ -29,7 +29,7 @@
 
 .contacts__subtitle {
   @include text;
-  max-width: 100%;
+  max-width: 4rem;
   font-size: 14px;
   line-height: 30px;
   color: $gray-dark;

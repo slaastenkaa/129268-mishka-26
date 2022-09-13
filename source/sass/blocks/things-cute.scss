@@ -139,13 +139,9 @@
 
   .things-cute__title {
     max-width: 530px;
-    margin: 15% auto;
+    margin: 14% auto;
     font-size: 43px;
     line-height: 50px;
-  }
-
-  .things-cute__title br {
-    display: none;
   }
 
   .things-cute__item {
@@ -169,7 +165,8 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/home-for-toys-desktop@2x.jpg");
-      background-size: auto;
+      background-size: cover;
+      background-position: center bottom 3px;
     }
   }
 

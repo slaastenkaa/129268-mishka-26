@@ -341,8 +341,8 @@
   }
 
   .checkbox-list {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 0%;
+    grid-template-columns: repeat(3, 0.28fr);
+    column-gap: 12%;
     row-gap: 12%;
   }
 
