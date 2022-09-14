@@ -38,11 +38,11 @@
 
 .filter-group__title::after {
   content: "";
+  display: block;
   margin-left: 19px;
   align-self: center;
-  height: 1px;
   flex-grow: 1;
-  background-color: $green;
+  border-bottom: 1px solid $green;
 }
 
 .filter-group__container {
