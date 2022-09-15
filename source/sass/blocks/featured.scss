@@ -101,7 +101,6 @@
   }
 
   .featured::after {
-    left: -21px;
     bottom: -75px;
     background-image: url("../img/icon-line.png");
   }
@@ -214,10 +213,9 @@
   .featured__list {
     margin-right: 3.7rem;
     margin-left: 11rem;
-    margin-bottom: 7rem;
+    margin-bottom: 7.2rem;
     grid-template-columns: 0.8fr 2fr;
     row-gap: 3%;
-    column-gap: 8%;
   }
 
   .featured__image {
@@ -230,7 +228,8 @@
   }
 
   .featured__options {
-    padding-bottom: 13px;
+    padding-right: 1.8rem;
+    padding-bottom: 0.75rem;
   }
 
   .featured__price {

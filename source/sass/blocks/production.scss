@@ -25,14 +25,6 @@
   color: $black;
 }
 
-.production__title:hover {
-  opacity: 0.6;
-}
-
-.production__title:active {
-  opacity: 0.3;
-}
-
 .production__title::before {
   position: absolute;
   top: 13px;
