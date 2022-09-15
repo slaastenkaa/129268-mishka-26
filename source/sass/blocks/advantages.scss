@@ -1,3 +1,7 @@
+.advantages {
+  margin-bottom: 30px;
+}
+
 .advantages__title {
   @include title;
   margin: 0;
@@ -14,9 +18,10 @@
 
 .advantages__item {
   position: relative;
-  width: 44%;
-  padding-top: 70px;
-  padding-bottom: 63px;
+  max-width: 96%;
+  padding-top: 54px;
+  padding-bottom: 28px;
+  line-height: 20px;
 
   &::before {
     position: absolute;
@@ -29,40 +34,61 @@
 }
 
 .advantages__item--flover-icon::before {
+  left: 8px;
   background-image: url("../img/icon-flover.svg");
   background-repeat: no-repeat;
 }
 
+.advantages__item--money-icon {
+  padding-bottom: 30px;
+}
+
 .advantages__item--money-icon::before {
+  top: 1px;
   background-image: url("../img/icon-money.svg");
   background-repeat: no-repeat;
 }
 
 .advantages__item--heart-icon::before {
+  top: 5px;
+  left: 7px;
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
 }
 
 .advantages__item--yarn-icon::before {
+  top: 3px;
+  left: 3px;
   background-image: url("../img/icon-yarn.svg");
   background-repeat: no-repeat;
 }
 
+.advantages__item--rocket-icon {
+  padding-bottom: 31px;
+}
+
 .advantages__item--rocket-icon::before {
+  top: 5px;
+  left: -6px;
   background-image: url("../img/icon-rocket.svg");
   background-repeat: no-repeat;
 }
 
 .advantages__item--gift-icon::before {
+  top: 1px;
+  left: 3px;
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    margin-bottom: 25px;
+  }
+
   .advantages__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 15%;
   }
 
   .advantages__title {
@@ -71,8 +97,11 @@
   }
 
   .advantages__item {
-    width: 80%;
+    width: 90%;
+    padding-top: 56px;
+    padding-bottom: 56px;
     font-size: 20px;
+    line-height: 22px;
   }
 
   .advantages__item--flover-icon {
@@ -81,10 +110,16 @@
 
   .advantages__item--money-icon {
     order: 3;
+    padding-top: 53px;
+  }
+
+  .advantages__item--money-icon::before {
+    top: 0;
   }
 
   .advantages__item--heart-icon {
     order: 5;
+    padding-top: 55px;
   }
 
   .advantages__item--yarn-icon {
@@ -93,6 +128,11 @@
 
   .advantages__item--rocket-icon {
     order: 4;
+    padding-top: 54px;
+  }
+
+  .advantages__item--rocket-icon::before {
+    top: 3px;
   }
 
   .advantages__item--gift-icon {
@@ -101,8 +141,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .advantages {
+    margin-bottom: 31px;
+  }
+
   .advantages__title {
-    margin-bottom: 39px;
+    margin-bottom: 37px;
+    font-size: 53px;
   }
 
   .advantages__container {

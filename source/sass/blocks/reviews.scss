@@ -1,5 +1,17 @@
 .reviews {
+  position: relative;
   margin-bottom: 89px;
+}
+
+.reviews::after {
+  content: "";
+  position: absolute;
+  bottom: -55px;
+  left: 0;
+  width: 100%;
+  height: 24px;
+  background-image: url("../img/icon-line-mobile.png");
+  background-repeat: repeat-x;
 }
 
 .reviews__title {
@@ -12,7 +24,7 @@
 
 .reviews__list {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   padding: 0;
   list-style: none;
 }
@@ -24,7 +36,7 @@
 .reviews__slider {
   display: flex;
   justify-content: center;
-  margin-bottom: 54px;
+  margin-bottom: 39px;
 }
 
 .reviews__slider-icon {
@@ -34,7 +46,7 @@
 .reviews__slider-prev,
 .reviews__slider-next {
   width: 100%;
-  padding: 13px 0;
+  padding: 12px 0 8px;
   background: transparent;
   border: 1px solid $red-light;
   cursor: pointer;
@@ -54,13 +66,14 @@
   display: flex;
   justify-content: center;
   height: min-content;
+  padding: 14px;
   text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
     position: relative;
-    margin-bottom: 130px;
+    margin-bottom: 150px;
     background: $white url("../img/lace-tablet.jpg") no-repeat;
     background-position: 0%;
   }
@@ -73,27 +86,24 @@
   }
 
   .reviews::after {
-    content: "";
-    position: absolute;
-    bottom: -55px;
-    left: 0;
-    width: 100%;
-    height: 24px;
+    left: -22px;
+    bottom: -90px;
     background-image: url("../img/icon-line.png");
-    background-repeat: repeat-x;
   }
 
   .reviews__container {
     position: relative;
     display: grid;
     grid-template-columns: 1fr max-content;
-    align-items: center;
-    padding: 82px 0 57px;
-    row-gap: 10%;
+    padding: 80px 0 60px;
+    row-gap: 12%;
   }
 
   .reviews__title {
+    margin: 0;
+    padding-top: 3px;
     font-size: 43px;
+    line-height: 50px;
   }
 
   .reviews__list {
@@ -103,6 +113,7 @@
   }
 
   .reviews__item .user-quote__text {
+    padding-bottom: 61px;
     font-size: 17px;
   }
 
@@ -111,7 +122,7 @@
     grid-row: 2;
     height: max-content;
     max-width: 175px;
-    margin-top: 90%;
+    align-self: flex-end;
     z-index: 1;
   }
 
@@ -125,16 +136,16 @@
     grid-row: 1;
     grid-column: 2;
     max-width: 175px;
+    padding: 14px 38px;
     font-size: 17px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
-    margin-bottom: 161px;
+    margin-bottom: 162px;
     background: $white url("../img/lace-desktop.jpg") no-repeat;
-    background-size: 40%;
-    background-position: 0%;
+    background-position: left 3.2rem center;
   }
 
   @media (min-resolution: 2dppx) {
@@ -144,12 +155,23 @@
     }
   }
 
+  .reviews::after {
+    width: 91.5%;
+    left: 3rem;
+    bottom: -92px;
+    background-image: url("../img/icon-line-desktop.png");
+  }
+
   .reviews__container {
-    padding: 78px 0 96px;
-    padding-left: 176px;
+    padding: 80px 0 103px 176px;
+    row-gap: 14%;
   }
 
   .reviews__title {
     font-size: 53px;
+  }
+
+  .reviews__item .user-quote__text {
+    padding-bottom: 45px;
   }
 }

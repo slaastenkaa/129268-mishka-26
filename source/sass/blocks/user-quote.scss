@@ -9,6 +9,19 @@
 
 .user-quote__author {
   @include title;
+  display: block;
+  padding-bottom: 8px;
   font-size: 17px;
   line-height: 24px;
+}
+
+.user-quote__link {
+  margin: 0;
+  letter-spacing: -0.6px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-quote__author {
+    letter-spacing: 0.6px;
+  }
 }

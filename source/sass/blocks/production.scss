@@ -18,7 +18,7 @@
 .production__title {
   @include title;
   position: relative;
-  margin: 21px auto 26px;
+  margin: 20px auto 26px 60px;
   width: min-content;
   font-size: 17px;
   line-height: 24px;
@@ -35,8 +35,8 @@
 
 .production__title::before {
   position: absolute;
-  top: 0;
-  left: -50px;
+  top: 13px;
+  left: -28px;
   bottom: 0;
   width: 55px;
   height: 38px;
@@ -48,7 +48,7 @@
 .production__video {
   position: relative;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 
 .production__video-image {
@@ -82,7 +82,7 @@
 
 .production__text {
   @include text;
-  padding: 0 34px 41px;
+  padding: 0 32px 40px;
   font-size: 13px;
   line-height: 24px;
   color: $gray-dark;
@@ -93,16 +93,22 @@
   width: auto;
   height: max-content;
   margin: 0 34px;
-  padding: 18px 11px;
+  padding: 16px 11px;
   font-size: 18px;
   text-align: center;
   line-height: 16px;
+  text-transform: uppercase;
   color: $gray-dark;
 }
 
 @media (min-width: $tablet-width) {
+  .production {
+    margin-bottom: 65px;
+  }
+
   .production__container {
     display: grid;
+    padding-bottom: 44px;
   }
 
   .production__video {
@@ -112,13 +118,19 @@
 
   .production__title {
     width: auto;
-    margin: 0 42px 26px 90px;
+    margin: 3px 42px 26px 107px;
     font-size: 20px;
   }
 
+  .production__title::before {
+    top: -2px;
+    left: -67px;
+  }
+
   .production__text {
-    padding: 0 42px 40px;
-    font-size: 17px;
+    padding: 0 39px 40px;
+    font-size: 15px;
+    line-height: 30px;
   }
 
   .production__button {
@@ -130,6 +142,7 @@
 
 @media (min-width: $desktop-width) {
   .production {
+    margin-bottom: 100px;
     grid-template-columns: 2fr 1fr;
   }
 
@@ -142,15 +155,18 @@
   .production__title {
     width: min-content;
     margin-top: 96px;
-    margin-left: 42px;
+    margin-left: 51px;
+    margin-bottom: 23px;
   }
 
   .production__title::before {
-    top: -60px;
+    top: -50px;
     left: 0;
   }
 
   .production__text {
+    padding-left: 52px;
+    padding-bottom: 48px;
     font-size: 15px;
   }
 
@@ -165,6 +181,6 @@
   }
 
   .production__button {
-    margin-bottom: 60px;
+    margin: 0 55px 60px;
   }
 }

@@ -50,12 +50,12 @@ const optimiseImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(libsquoosh())
     .pipe(gulp.dest('build/img'))
-} 
+}
 
 const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(gulp.dest('build/img'))
-} 
+}
 
 // WebP
 
@@ -63,7 +63,6 @@ const optimiseWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(libsquoosh({
       webp: {},
-      // avif: {}
     })
     )
     .pipe(gulp.dest('build/img'))
@@ -72,7 +71,7 @@ const optimiseWebp = () => {
 // SVG
 
 const svg = () => {
-  return gulp.src('source/img/**/*.svg')
+  return gulp.src('source/img/*.svg')
     .pipe(svgmin()
     )
     .pipe(gulp.dest('build/img'))
@@ -107,7 +106,7 @@ const copy = (done) => {
 
 const clean = () => {
   return deleteAsync('build');
-};
+  };
 
 // Server
 

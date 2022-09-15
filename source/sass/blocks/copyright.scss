@@ -6,21 +6,33 @@
 }
 
 .copyright__link-icon {
-  color: $green;
+  margin-top: 3px;
+  fill: $green;
 }
 
 .copyright__link-icon:hover {
-  color: $palegreen;
+  fill: $palegreen;
 }
 
 .copyright__link-icon:active {
-  color: $palegreen;
+  fill: $palegreen;
   opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__copyright {
+    margin: 0 13px 0 0;
+    gap: 18%;
+    align-items: flex-start;
+  }
+
+  .copyright__title {
+    margin-top: 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__link-icon {
     margin: 0;
-    padding: 0;
   }
 }

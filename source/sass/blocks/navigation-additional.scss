@@ -62,12 +62,13 @@
 
   .navigation-additional__item .navigation-additional__link {
     font-size: 17px;
+    letter-spacing: -1px;
   }
 
   .info-navigation {
     display: grid;
-    grid-template-columns: max-content max-content;
-    gap: 7%;
+    grid-template-columns: 0.9fr 1fr;
+    gap: 2rem;
   }
 
   .navigation-additional__description {

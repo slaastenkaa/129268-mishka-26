@@ -16,7 +16,7 @@
     <nav class="page-header__nav page-header__closed page-header__nojs">
       <div class="navigation container"><a class="navigation__logo" href="./index.html">
           <picture>
-            <source media="(min-width: 1200px)" srcset="./img/mishka-logo-desktop.svg">
+            <source media="(min-width: 1150px)" srcset="./img/mishka-logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="./img/mishka-logo-tablet.svg"><img class="navigation__logo-image"
               src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип интерент-магазина «Мишка»">
           </picture>
@@ -34,7 +34,7 @@
           <li class="navigation__item"><a class="navigation__link navigation__cart link" href="login.html"><svg
                 class="navigation__link-icon" aria-label="Корзина" width="21" height="18" viewBox="0 0 21 18"
                 aria-hidden="true" focusable="false">
-                <use xlink:href="./img/sprite.svg#icon-card"></use>
+                <use xlink:href="./img/sprite.svg#icon-cart"></use>
               </svg> <span class="navigation__cart--text">Корзина: пока пуста</span></a></li>
         </ul>
       </div>
@@ -54,18 +54,20 @@
   <main class="main-body">
     <h1 class="visually-hidden">Интерент-магазина «Мишка»</h1>
     <section class="things-cute">
-      <h2 class="things-cute__title">Милые штуки ручной работы для дома</h2>
+      <h2 class="things-cute__title container">Милые штуки ручной <br>
+        работы для дома</h2>
       <ul class="things-cute__list container">
         <li class="things-cute__item"><a class="things-cute__link" href="#">
-            <p class="things-cute__text">Предметы интерьера</p><svg class="things-cute__icon"
-              aria-label="Предмет интерьера" width="40" height="62" viewBox="0 0 40 62" aria-hidden="true"
-              focusable="false">
-              <use xlink:href="./img/sprite.svg#icon-lamp"></use>
+            <p class="things-cute__text">Предметы интерьера</p>
+            <svg class="things-cute__icon icon-interior" aria-label="Предмет интерьера" width="40" height="62"
+              viewBox="0 0 40 62" aria-hidden="true" focusable="false">
+              <use xlink:href="./img/sprite.svg#icon-interior"></use>
             </svg>
           </a></li>
         <li class="things-cute__item"><a class="things-cute__link" href="#">
-            <p class="things-cute__text">Детские игрушки</p><svg class="things-cute__icon" aria-label="Детская игрушки"
-              width="60" height="60" viewBox="0 0 60 60" aria-hidden="true" focusable="false">
+            <p class="things-cute__text">Детские игрушки</p><svg class="things-cute__icon icon-toy"
+              aria-label="Детская игрушки" width="60" height="60" viewBox="0 0 60 60" aria-hidden="true"
+              focusable="false">
               <use xlink:href="./img/sprite.svg#icon-toy"></use>
             </svg>
           </a></li>
@@ -105,7 +107,7 @@
                 alt="Вязаные корзинки."></picture>
           </div>
           <div class="featured__order">
-            <p class="featured__price">Цена: 990 руб.</p><a class="featured__button button" href="#">ЗАКАЗАТЬ</a>
+            <p class="featured__price">Цена: 990 руб.</p><a class="featured__button button modal-button" href="#">ЗАКАЗАТЬ</a>
           </div>
         </div>
       </div>
@@ -114,12 +116,12 @@
       <div class="advantages__container container">
         <h2 class="advantages__title title">Коротко о нас:</h2>
         <ul class="advantages__list">
-          <li class="advantages__item advantages__item--flover-icon">Экологически чистые материалы</li>
-          <li class="advantages__item advantages__item--money-icon">Скандинавский стиль по российской цене</li>
-          <li class="advantages__item advantages__item--heart-icon">Увеличивает лайки на фотографиях</li>
-          <li class="advantages__item advantages__item--yarn-icon">Связано вручную с любовью и умилением</li>
+          <li class="advantages__item advantages__item--flover-icon">Экологически <br>чистые материалы</li>
+          <li class="advantages__item advantages__item--money-icon">Скандинавский стиль <br>по российской цене</li>
+          <li class="advantages__item advantages__item--heart-icon">Увеличивает лайки <br>на фотографиях</li>
+          <li class="advantages__item advantages__item--yarn-icon">Связано вручную <br>с любовью и умилением</li>
           <li class="advantages__item advantages__item--rocket-icon">Поддержка отечественного производителя</li>
-          <li class="advantages__item advantages__item--gift-icon">Поставляется в подарочной упаковке</li>
+          <li class="advantages__item advantages__item--gift-icon">Поставляется <br>в подарочной упаковке</li>
         </ul>
       </div>
     </section>
@@ -128,9 +130,7 @@
         <h2 class="reviews__title title">Отзывы</h2>
         <ul class="reviews__list">
           <li class="reviews__item user-quote">
-            <blockquote class="user-quote__text">Я молодая мама, но всё равно фотографии не набирали и близко такого
-              количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,и
-              мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote><cite
+            <blockquote class="user-quote__text">Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</blockquote><cite
               class="user-quote__author">Анастасия Красильникова</cite>
             <p class="user-quote__link">@misssssiskras</p>
           </li>
@@ -152,11 +152,11 @@
         <div class="reviews__slider"><button class="reviews__slider-prev" type="button"><svg
               class="reviews__slider-icon" width="50" height="26" viewBox="0 0 50 26" aria-hidden="true"
               focusable="false">
-              <use xlink:href="./img/sprite.svg#icon-left"></use>
+              <use xlink:href="./img/sprite.svg#arrow-left"></use>
             </svg> <span class="visually-hidden">Предыдущий отзыв.</span></button> <button class="reviews__slider-next"
             type="button"><svg class="reviews__slider-icon" width="50" height="26" fill="currentColor"
               viewBox="0 0 50 26" aria-hidden="true" focusable="false">
-              <use xlink:href="./img/sprite.svg#icon-right"></use>
+              <use xlink:href="./img/sprite.svg#arrow-right"></use>
             </svg> <span class="visually-hidden">Следующий отзыв.</span></button></div><a class="reviews__button button"
           href="#">Написать</a>
       </div>
@@ -172,7 +172,7 @@
           <dd class="contacts__description"><a class="contacts__mail link"
               href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
           <dt class="contacts__subtitle">адрес:</dt>
-          <dd class="contacts__description">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
+          <dd class="contacts__description">г. Санкт-Петербург <br>ул. Большая Конюшенная д. 19/8, офис 101</dd>
         </dl>
       </div>
       <h3 class="visually-hidden">Как до нас добраться</h3><iframe class="contacts__map"
@@ -185,10 +185,10 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__container container"><a class="page-footer__logo" href="#"
-        aria-label="Сайт интерент-магазина «Мишка»"><svg class="page-footer__logo-icon"
-          aria-label="Логотип интерент-магазина «Мишка»" width="102" height="35" viewBox="0 0 102 35" aria-hidden="true"
-          focusable="false">
-          <use xlink:href="./img/sprite.svg#logo-mishka-mobile"></use>
+        aria-label="Сайт интерент-магазина «Мишка»">
+        <svg class="page-footer__logo-icon" aria-label="Логотип интерент-магазина «Мишка»" width="102" height="35"
+          viewBox="0 0 102 35" aria-hidden="true" focusable="false">
+          <use xlink:href="./img/sprite.svg#mishka-logo-footer"></use>
         </svg></a>
       <div class="page-footer__social social">
         <h2 class="visually-hidden">Мы в соцсетях.</h2>
@@ -196,7 +196,7 @@
           <li class="social__item"><a class="social__link social__link--vkontakte"
               href="https://vk.com/htmlacademy"><svg class="social__link-icon" width="28" height="23"
                 viewBox="0 0 28 23" aria-hidden="true" focusable="false">
-                <use xlink:href="./img/sprite.svg#icon-vk"></use>
+                <use xlink:href="./img/sprite.svg#icon-vkontakte"></use>
               </svg> <span class="visually-hidden">Вконтакте HTML Academy</span></a></li>
           <li class="social__item"><a class="social__link social__link--youtube"
               href="https://www.youtube.com/user/htmlacademyru"><svg class="social__link-icon" width="28" height="23"
@@ -211,16 +211,16 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <h2 class="copyright__title title">Разработано:</h2><a class="copyright__link"
+        <h2 class="copyright__title title">Разработано</h2><a class="copyright__link"
           href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт «HTML Academy»"><svg
             class="copyright__link-icon" aria-label="Логотип «HTML Academy»" width="27" height="35" viewBox="0 0 27 35"
             aria-hidden="true" focusable="false">
-            <use xlink:href="./img/sprite.svg#logo-htmlacademy"></use>
+            <use xlink:href="./img/sprite.svg#icon-htmlacademy"></use>
           </svg> <span class="visually-hidden">HTML Academy</span></a>
       </div>
     </div>
   </footer>
-  <div class="modal modal-close">
+  <div class="modal-close">
     <section class="modal__container">
       <h2 class="modal__title title">Добавить в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
