@@ -1,8 +1,7 @@
-let navClose = document.querySelector('.page-header__closed');
-let navButton = document.querySelector('.navigation__button');
-let modalButton = document.querySelector('.modal-button');
-let modal = document.querySelector('.modal');
-let modalClose = document.querySelector('.modal-close');
+const navClose = document.querySelector('.page-header__closed');
+const navButton = document.querySelector('.navigation__button');
+const modalButton = document.querySelectorAll('.modal-button');
+const modalClose = document.querySelector('.modal-close');
 
 navClose.classList.remove('page-header__nojs');
 
@@ -16,16 +15,17 @@ navButton.addEventListener('click', function () {
   }
 });
 
-modalButton.addEventListener('click', function () {
+modalButton.forEach(element => element.addEventListener('click', event => {
   if (modalClose.classList.contains('modal-close')) {
+    event.preventDefault();
     modalClose.classList.remove('modal-close');
     modalClose.classList.add('modal');
-  } else {
-    modal.addEventListener('click', function () {
-      if (modalClose.classList.contains('modal')) {
+  }
+}));
+  
+modalClose.addEventListener('click', event => {
+      if (event.target == modalClose && modalClose.classList.contains('modal')) {
         modalClose.classList.add('modal-close'); 
         modalClose.classList.remove('modal'); 
       }
-    });
-  }
 });
