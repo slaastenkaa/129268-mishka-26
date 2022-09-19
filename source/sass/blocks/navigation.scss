@@ -130,12 +130,13 @@
     z-index: 1;
     top: 100%;
     width: 100%;
+    min-height: 158px;
     background-color: $white;
   }
 
   .site-navigation .navigation__item {
     padding-left: 4.8rem;
-    padding-right: 4.8rem;
+    padding-right: 1rem;
     text-align: start;
   }
 
@@ -145,12 +146,12 @@
 
   .user-navigation .navigation__item {
     padding-left: 2rem;
-    padding-right: 2rem;
+    padding-right: 1rem;
     text-align: start;
   }
 
   .navigation__search-text,
-  .navigation__cart--text {
+  .navigation__cart-text {
     padding-left: 1.4rem;
   }
 
@@ -164,6 +165,12 @@
 
   .page-header__nojs .navigation__button {
     display: none;
+  }
+
+  .page-header__nojs .navigation__list {
+    display: block;
+    position: relative;
+    top: 0;
   }
 }
 
@@ -192,16 +199,16 @@
   }
 
   .navigation__item {
-    padding: 29px 0 26px;
+    padding: 29px 0 28px;
     box-shadow: none;
   }
 
   .navigation__cart {
-    padding-left: 33px;
+    padding-left: 32px;
   }
 
-  .navigation__cart--text {
-    margin-left: 25px;
+  .navigation__cart-text {
+    margin-left: 26px;
   }
 
   .site-navigation {
@@ -210,17 +217,21 @@
     top: 5rem;
     gap: 1.8rem;
     grid-template-columns: 1fr 1fr;
-    letter-spacing: -1px;
     z-index: 1;
+
+    .navigation__link {
+      font-size: 15px;
+    }
   }
 
   .site-navigation .navigation__item {
-    padding: 26px 0;
+    margin-left: -3px;
+    padding: 27px 8px 0 0;
   }
 
   .user-navigation {
     display: grid;
-    grid-template-columns: 0.65fr 2fr;
+    grid-template-columns: 0.62fr 2fr;
     grid-column: 2/4;
     margin-left: auto;
   }
@@ -228,6 +239,10 @@
   .user-navigation .navigation__item {
     margin: auto 0;
     border-left: 1px solid $red-light;
+  }
+
+  .user-navigation .navigation__item:nth-child(1) {
+    padding: 32px 3px 26px 5px;
   }
 
   .navigation__search-text {
@@ -253,8 +268,13 @@
   }
 
   .site-navigation .navigation__item {
-    border-right: 1px solid $red-light;
+    margin: 0;
+    padding: 30px 0 28px;
     text-align: start;
+  }
+
+  .site-navigation .navigation__item:not(:nth-child(2n)) {
+    border-right: 1px solid $red-light;
   }
 
   .navigation__list {
@@ -265,8 +285,12 @@
     display: grid;
     position: relative;
     top: 0;
-    grid-template-columns: 0.9fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 0.93fr 1fr;
+    gap: 2.2rem;
+
+    .navigation__link {
+      font-size: 17px;
+    }
   }
 
   .user-navigation {
@@ -274,10 +298,11 @@
   }
 
   .navigation__cart {
-    padding-left: 29px;
+    padding-left: 31px;
   }
 
-  .navigation__cart--text {
-    margin-left: 29px;
+  .navigation__cart-text {
+    margin-left: 27px;
+    margin-right: 2px;
   }
 }

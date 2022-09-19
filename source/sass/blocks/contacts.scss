@@ -1,5 +1,5 @@
 .contacts {
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 
 .contacts__container {
@@ -131,7 +131,7 @@
     max-width: 1051px;
     margin: 0 auto;
     margin-bottom: 105px;
-    padding-left: 176px;
+    padding-left: 174px;
   }
 
   .contacts__container {
@@ -147,15 +147,16 @@
   }
 
   .contacts__icon {
-    top: -1rem;
+    top: -0.95rem;
     right: auto;
-    left: -7rem;
+    left: -6.95rem;
   }
 
   .contacts__list {
     grid-template-columns: max-content 1fr;
     margin: 0;
-    column-gap: 1.3em;
+    column-gap: 1.5em;
+    row-gap: 1.79em;
   }
 
   .contacts__description {
@@ -175,7 +176,7 @@
   .contacts__button {
     grid-row: 2;
     height: max-content;
-    margin-right: 120px;
+    margin-right: 7.7rem;
     padding: 14px 39px;
   }
 }

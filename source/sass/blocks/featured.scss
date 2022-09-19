@@ -168,13 +168,15 @@
 
 @media (min-width: $desktop-width) {
   .featured {
-    margin-bottom: 161px;
+    margin-bottom: 162px;
   }
 
   .featured::after {
-    width: 91.5%;
-    left: 3rem;
+    width: 100%;
+    max-width: 1050px;
+    left: 50%;
     bottom: -97px;
+    transform: translateX(-50%);
     background-image: url("../img/icon-line-desktop.png");
   }
 

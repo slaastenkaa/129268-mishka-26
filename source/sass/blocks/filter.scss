@@ -31,15 +31,19 @@
 .filter-group__title {
   display: flex;
   width: 100%;
-  margin-bottom: 31px;
+  margin-bottom: 24px;
   color: $green;
   text-transform: uppercase;
+}
+
+.checkbox-container .filter-group__title {
+  margin-bottom: 31px;
 }
 
 .filter-group__title::after {
   content: "";
   display: block;
-  margin: auto 0;
+  margin: auto;
   margin-left: 19px;
   flex-grow: 1;
   border-bottom: 1px solid $green;
@@ -54,6 +58,7 @@
 
 .filter-group__list {
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -62,17 +67,21 @@
 }
 
 .radio-item {
-  margin-left: 1.2rem;
-  margin-bottom: 8%;
+  display: flex;
+  align-items: center;
+  margin-top: 0.6rem;
+  margin-left: 3.7rem;
+  margin-bottom: 0.6rem;
+  min-height: 37px;
 }
 
 .checkbox-item {
-  margin-bottom: 2.55rem;
+  margin-bottom: 2.65rem;
 }
 
 // Форма ввода данных
 .form-title {
-  margin-bottom: 28px;
+  margin-bottom: 1.4rem;
 }
 
 .form-list {
@@ -173,7 +182,7 @@
 
 @media (min-width: $tablet-width) {
   .filter-group {
-    padding: 54px 0 29px;
+    padding: 45px 0 19px;
     margin-bottom: 0;
   }
 
@@ -182,19 +191,19 @@
   }
 
   .checkbox {
-    padding: 66px 0 57px;
+    padding: 66px 0 24px;
   }
 
   .form {
-    padding: 63px 0 12px;
+    padding: 68px 0 13px;
   }
 
   .contact {
-    padding: 65px 0 31px;
+    padding: 65px 0 30px;
   }
 
   .aside {
-    padding: 66px 0 52px;
+    padding: 65px 0 52px;
   }
 
   .filter-container {
@@ -211,24 +220,23 @@
   }
 
   .filter-group__list {
-    margin-top: -52px;
+    margin-top: -3.8rem;
+    margin-left: 2.6rem;
     grid-column: 2 / -1;
   }
 
   .radio-item {
     margin-left: 2.3em;
-  }
-
-  .radio-item:not(:last-child) {
-    margin-bottom: 12%;
+    margin-bottom: 2.4rem;
   }
 
   .checkbox-list {
     display: grid;
+    margin-top: -3.2rem;
     margin-left: 1.3rem;
     grid-template-columns: 1fr 1fr;
-    column-gap: 24%;
-    row-gap: 9%;
+    column-gap: 6.4rem;
+    row-gap: 1rem;
   }
 
   .form-label {
@@ -239,6 +247,7 @@
 
   .form-list {
     margin-top: -49px;
+    margin-left: 0;
   }
 
   .form-item {
@@ -263,20 +272,22 @@
   }
 
   .contact-list:nth-child(2) {
-    margin-top: -39px;
+    margin-top: -38px;
   }
 
   .filter-group__icon {
-    right: 22px;
+    top: 2px;
+    right: 23px;
   }
 
   .filter-group__container {
-    margin-top: -52px;
+    margin-top: -54px;
     grid-column: 2/-1;
   }
 
   .filter-group__textarea {
     margin-top: -52px;
+    padding: 14px;
     grid-column: 2/-1;
     font-size: 19px;
     line-height: 18px;
@@ -307,19 +318,19 @@
 
 @media (min-width: $desktop-width) {
   .filter-group {
-    padding: 30px 0 5px;
+    padding: 30px 0 18px;
   }
 
   .checkbox {
-    padding: 66px 0 42px;
+    padding: 67px 0 24px;
   }
 
   .form {
-    padding: 63px 0 11px;
+    padding: 69px 0 12px;
   }
 
   .contact {
-    padding: 66px 0 30px;
+    padding: 66px 0 27px;
   }
 
   .aside {
@@ -331,9 +342,8 @@
     margin-left: 3.7rem;
   }
 
-  .radio-item,
-  .radio-item:not(:last-child) {
-    margin-bottom: 7%;
+  .radio-item {
+    margin-bottom: 2.4rem;
   }
 
   .filter-container {
@@ -342,8 +352,8 @@
 
   .checkbox-list {
     grid-template-columns: repeat(3, 0.28fr);
-    column-gap: 12%;
-    row-gap: 12%;
+    column-gap: 6rem;
+    row-gap: 1rem;
   }
 
   .form-list {

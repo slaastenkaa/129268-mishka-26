@@ -21,8 +21,8 @@
 
 .card__info {
   display: block;
-  margin-top: 0.82rem;
-  padding-bottom: 17px;
+  margin-top: 0.9rem;
+  padding-bottom: 1.1rem;
   border-bottom: 1px solid $red-light;
 }
 
@@ -57,7 +57,7 @@
   justify-content: space-between;
   align-items: center;
   height: max-content;
-  margin: 22px 0 18px;
+  margin: 23px 0 15px;
 }
 
 .card__price {
@@ -121,6 +121,11 @@
   .card__price {
     font-size: 17px;
     line-height: 24px;
+  }
+
+  .card__button {
+    margin-right: -2px;
+    margin-top: -4px;
   }
 }
 
