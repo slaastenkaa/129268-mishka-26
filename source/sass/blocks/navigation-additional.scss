@@ -41,7 +41,7 @@
 
 @media (min-width: $tablet-width) {
   .navigation-additional {
-    padding-top: 21px;
+    padding-top: 20px;
   }
 
   .navigation-additional__item .navigation-additional__link {
@@ -61,14 +61,13 @@
   }
 
   .navigation-additional__item .navigation-additional__link {
-    font-size: 17px;
-    letter-spacing: -1px;
+    font-size: 15px;
   }
 
   .info-navigation {
     display: grid;
     grid-template-columns: 0.9fr 1fr;
-    gap: 2rem;
+    gap: 2.4rem;
   }
 
   .navigation-additional__description {
