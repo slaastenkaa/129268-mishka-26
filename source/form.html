@@ -9,6 +9,8 @@
   <link rel="icon" href="./favicon.ico">
   <link rel="icon" href="./img/favicons/favicon-32x32.png" type="image/svg+xml">
   <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preload" href="./fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -39,12 +41,12 @@
         </ul>
       </div>
     </nav>
-    <nav class="page-header__nav-inner nav-inner">
+    <nav class="page-header__nav-inner page-header-inner">
       <div class="navigation-additional navigation container">
         <ul class="navigation-additional__list info-navigation">
           <li class="navigation-additional__item"><a class="navigation-additional__link link"
               href="./catalog.html">Новые поступления</a></li>
-          <li class="navigation-additional__item"><a class="navigation-additional__link link" href="#">Распродажа</a>
+          <li class="navigation-additional__item"><a class="navigation-additional__link link" href="./catalog.html">Распродажа</a>
           </li>
         </ul>
         <p class="navigation-additional__description">Бесплатная доставка по России</p>
@@ -53,6 +55,7 @@
   </header>
   <main class="order">
     <header class="order__header">
+      <h1 class="visually-hidden">Форма заказа интерент-магазина «Мишка»</h1>
       <h2 class="order__title title container">Вязание на заказ</h2>
     </header>
     <section class="order__form">
@@ -60,86 +63,85 @@
       <p class="order__form-text container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
         заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="order__form filter" action="https://echo.htmlacademy.ru/" method="get">
-        <div class="filter-group radio">
-          <fieldset class="filter-container radio-container container">
+        <div class="filter-group filter-radio">
+          <fieldset class="filter-container filter-radio-container container">
             <legend class="filter-group__title">Тип</legend>
-            <ul class="filter-group__list radio-list">
-              <li class="filter-group__item radio-item">
-                <input class="visually-hidden radio-input" type="radio" id="accessories" name="type"
+            <ul class="filter-group__list filter-radio-list">
+              <li class="filter-group__item filter-radio-item">
+                <input class="visually-hidden filter-radio-input" type="radio" id="accessories" name="type"
                   value="Аксессуар для интерьера" checked="checked">
-                <label class="radio-label" for="accessories">Аксессуар для интерьера</label>
+                <label class="filter-radio-label" for="accessories">Аксессуар для интерьера</label>
               </li>
-              <li class="filter-group__item radio-item">
-                <input class="visually-hidden radio-input" type="radio" id="toy" name="type" value="Детская игрушка">
-                <label class="radio-label" for="toy">Детская игрушка</label>
+              <li class="filter-group__item filter-radio-item">
+                <input class="visually-hidden filter-radio-input" type="radio" id="toy" name="type" value="Детская игрушка">
+                <label class="filter-radio-label" for="toy">Детская игрушка</label>
               </li>
             </ul>
           </fieldset>
         </div>
-        <div class="filter-group checkbox">
-          <fieldset class="filter-container checkbox-container container">
+        <div class="filter-group filter-checkbox">
+          <fieldset class="filter-container filter-checkbox-container container">
             <legend class="filter-group__title">Цвет</legend>
-            <ul class="filter-group__list checkbox-list">
-              <li class="filter-group__item checkbox-item">
+            <ul class="filter-group__list filter-checkbox-list">
+              <li class="filter-group__item filter-checkbox-item">
                 <label class="control">
                   <input class="visually-hidden control__input" type="checkbox" name="color" value="Белый" checked="">
                   <span class="control__span control__checkbox">Белый</span>
                 </label>
               </li>
-              <li class="filter-group__item checkbox-item"><label class="control"><input
+              <li class="filter-group__item filter-checkbox-item"><label class="control"><input
                     class="visually-hidden control__input" type="checkbox" name="color" value="Серый" checked=""> <span
                     class="control__span control__checkbox">Серый</span></label></li>
-              <li class="filter-group__item checkbox-item"><label class="control"><input
+              <li class="filter-group__item filter-checkbox-item"><label class="control"><input
                     class="visually-hidden control__input" type="checkbox" name="color" value="Тиффани"> <span
                     class="control__span control__checkbox">Тиффани</span></label></li>
-              <li class="filter-group__item checkbox-item"><label class="control"><input
+              <li class="filter-group__item filter-checkbox-item"><label class="control"><input
                     class="visually-hidden control__input" type="checkbox" name="color" value="Черный"> <span
                     class="control__span control__checkbox">Черный</span></label></li>
-              <li class="filter-group__item checkbox-item"><label class="control"><input
+              <li class="filter-group__item filter-checkbox-item"><label class="control"><input
                     class="visually-hidden control__input" type="checkbox" name="color" value="Розовый"> <span
                     class="control__span control__checkbox">Розовый</span></label></li>
-              <li class="filter-group__item checkbox-item"><label class="control"><input
+              <li class="filter-group__item filter-checkbox-item"><label class="control"><input
                     class="visually-hidden control__input" type="checkbox" name="color" value="Оранжевый"> <span
                     class="control__span control__checkbox">Оранжевый</span></label></li>
             </ul>
           </fieldset>
         </div>
-        <div class="filter-group form">
-          <fieldset class="filter-container form-container container">
-            <legend class="filter-group__title form-title">ФИО</legend>
-            <ul class="filter-group__list form-list">
-              <li class="filter-group__item form-item">
-                <label class="filter-group__label form-label title" for="login-field-name">Имя:</label>
-                <input class="filter-group__input form-input" type="text" name="Name" id="login-field-name" required=""
+        <div class="filter-group filter-form">
+          <fieldset class="filter-container filter-form-container container">
+            <legend class="filter-group__title filter-form-title">ФИО</legend>
+            <ul class="filter-group__list filter-form-list">
+              <li class="filter-group__item filter-form-item">
+                <label class="filter-group__label filter-form-label title" for="login-field-name">Имя:</label>
+                <input class="filter-group__input filter-form-input" type="text" name="Name" id="login-field-name" required=""
                   placeholder="Введите ваше имя*"></li>
-              <li class="filter-group__item form-item">
-                <label class="filter-group__label form-label title" for="login-field-surname">Фамилия:</label> <input
-                  class="filter-group__input form-input" type="text" name="Surname" id="login-field-surname" required=""
+              <li class="filter-group__item filter-form-item">
+                <label class="filter-group__label filter-form-label title" for="login-field-surname">Фамилия:</label> <input
+                  class="filter-group__input filter-form-input" type="text" name="Surname" id="login-field-surname" required=""
                   placeholder="Укажите фамилию*"></li>
-              <li class="filter-group__item form-item">
-                <label class="filter-group__label form-label title" for="login-field-patronymic">Отчество:</label>
-                <input class="filter-group__input form-input" type="text" name="Middle namen"
+              <li class="filter-group__item filter-form-item">
+                <label class="filter-group__label filter-form-label title" for="login-field-patronymic">Отчество:</label>
+                <input class="filter-group__input filter-form-input" type="text" name="Middle namen"
                   id="login-field-patronymic" placeholder="Отчество, если желаете"></li>
             </ul>
           </fieldset>
         </div>
-        <div class="filter-group contact">
-          <fieldset class="filter-container contact-container container">
-            <legend class="filter-group__title contact-title">тел</legend>
-            <div class="filter-group__container contact-list">
-              <label class="visually-hidden" for="login-field-tel">Ваш
-                телефон</label>
-              <input class="filter-group__input form-input form-phone" type="tel" name="Tel" id="login-field-tel"
+        <div class="filter-group filter-contact">
+          <fieldset class="filter-container filter-contact-container container">
+            <div class="filter-group__container filter-contact-list">
+              <label class="filter-group__title filter-contact-title" for="login-field-tel">тел</label>
+              <input class="filter-group__input filter-form-input filter-form-phone" type="tel" name="Tel" id="login-field-tel"
                 required="" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
               <svg class="filter-group__icon" aria-label="Телефон" width="25" height="24" viewBox="0 0 25 24"
                 aria-hidden="true" focusable="false">
                 <use xlink:href="./img/sprite.svg#icon-phone"></use>
               </svg></div>
           </fieldset>
-          <fieldset class="filter-container contact-container container">
-            <legend class="filter-group__title contact-title">E-mail</legend>
-            <div class="filter-group__container contact-list"><label class="visually-hidden"
-                for="login-field-email">Ваша почта</label> <input class="filter-group__input form-input form-mail"
+          <fieldset class="filter-container filter-contact-container container">
+            <div class="filter-group__container filter-contact-list">
+              <label class="filter-group__title filter-contact-title"
+                for="login-field-email">E-mail</label>
+                <input class="filter-group__input filter-form-input filter-form-mail"
                 type="email" name="Email" id="login-field-email" required="" placeholder="Ваш Email*"> <svg
                 class="filter-group__icon" aria-label="Электронная почта" width="32" height="21" viewBox="0 0 32 21"
                 aria-hidden="true" focusable="false">
@@ -147,9 +149,9 @@
               </svg></div>
           </fieldset>
         </div>
-        <div class="filter-group aside">
-          <fieldset class="filter-container aside-container container">
-            <legend class="filter-group__title aside-title">Доп</legend>
+        <div class="filter-group filter-aside">
+          <fieldset class="filter-container filter-aside-container container">
+            <legend class="filter-group__title filter-aside-title">Доп</legend>
             <textarea class="filter-group__textarea" name="text" rows="5" cols="30"
               placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>

@@ -1,7 +1,3 @@
-.nav-inner {
-  background-color: $anti-flash-white;
-}
-
 .navigation-additional__list {
   display: none;
   margin: 0;
@@ -16,6 +12,15 @@
   font-size: 15px;
   line-height: 24px;
   color: $black;
+
+  &:hover,
+  &:focus {
+    color: $black-medium;
+  }
+
+  &:active {
+    color: $black-light;
+  }
 }
 
 .navigation-additional__description {
@@ -60,14 +65,14 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .navigation-additional__item .navigation-additional__link {
-    font-size: 15px;
-  }
-
-  .info-navigation {
+  .navigation-additional__list {
     display: grid;
     grid-template-columns: 0.9fr 1fr;
     gap: 2.4rem;
+  }
+
+  .navigation-additional__item .navigation-additional__link {
+    font-size: 15px;
   }
 
   .navigation-additional__description {

@@ -9,6 +9,8 @@
   <link rel="icon" href="./favicon.ico">
   <link rel="icon" href="./img/favicons/favicon-32x32.png" type="image/svg+xml">
   <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preload" href="./fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -44,7 +46,7 @@
         <ul class="navigation-additional__list info-navigation">
           <li class="navigation-additional__item"><a class="navigation-additional__link link"
               href="./catalog.html">Новые поступления</a></li>
-          <li class="navigation-additional__item"><a class="navigation-additional__link link" href="#">Распродажа</a>
+          <li class="navigation-additional__item"><a class="navigation-additional__link link" href="./catalog.html">Распродажа</a>
           </li>
         </ul>
         <p class="navigation-additional__description">Бесплатная доставка по России</p>
@@ -59,13 +61,13 @@
       <ul class="things-cute__list container">
         <li class="things-cute__item"><a class="things-cute__link" href="./catalog.html">
             <p class="things-cute__text">Предметы интерьера</p>
-            <svg class="things-cute__icon icon-interior" aria-label="Предмет интерьера" width="40" height="62"
+            <svg class="things-cute__icon things-cute__icon-interior" aria-label="Предмет интерьера" width="40" height="62"
               viewBox="0 0 40 62" aria-hidden="true" focusable="false">
               <use xlink:href="./img/sprite.svg#icon-interior"></use>
             </svg>
           </a></li>
         <li class="things-cute__item"><a class="things-cute__link" href="./catalog.html">
-            <p class="things-cute__text">Детские игрушки</p><svg class="things-cute__icon icon-toy"
+            <p class="things-cute__text">Детские игрушки</p><svg class="things-cute__icon things-cute__icon-toy"
               aria-label="Детская игрушки" width="60" height="60" viewBox="0 0 60 60" aria-hidden="true"
               focusable="false">
               <use xlink:href="./img/sprite.svg#icon-toy"></use>
@@ -175,12 +177,18 @@
           <dd class="contacts__description">г. Санкт-Петербург <br>ул. Большая Конюшенная д. 19/8, офис 101</dd>
         </dl>
       </div>
-      <h3 class="visually-hidden">Как до нас добраться</h3><iframe class="contacts__map"
+      <h3 class="visually-hidden">Как до нас добраться</h3>
+      <iframe class="contacts__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1661366401876!5m2!1sru!2sru"
         width="320" height="454" style="border: 0;" allowfullscreen="" loading="lazy"
         title="Офис компании по адресу г. Санкт-Петербургул. Большая Конюшеннаяд. 19/8, офис 101"
-        referrerpolicy="no-referrer-when-downgrade"></iframe><a class="contacts__button button" href="#">Напишите
-        нам</a>
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <picture class="contacts__map contacts__map-picture ">
+          <source media="(min-width: 1150px)" srcset="./img/map-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="./img/map-tablet.jpg">
+          <img class="contacts__map-image" src="./img/map-mobile.jpg" width="320" height="455" alt="Как до нас добраться.">
+        </picture>
+      <a class="contacts__button button" href="#">Напишите нам</a>
     </section>
   </main>
   <footer class="page-footer">

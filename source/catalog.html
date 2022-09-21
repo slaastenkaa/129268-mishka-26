@@ -9,6 +9,8 @@
   <link rel="icon" href="./favicon.ico">
   <link rel="icon" href="./img/favicons/favicon-32x32.png" type="image/svg+xml">
   <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preload" href="./fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -39,12 +41,12 @@
         </ul>
       </div>
     </nav>
-    <nav class="page-header__nav-inner nav-inner">
+    <nav class="page-header__nav-inner page-header-inner">
       <div class="navigation-additional navigation container">
         <ul class="navigation-additional__list info-navigation">
           <li class="navigation-additional__item"><a class="navigation-additional__link link"
               href="./catalog.html">Новые поступления</a></li>
-          <li class="navigation-additional__item"><a class="navigation-additional__link link" href="#">Распродажа</a>
+          <li class="navigation-additional__item"><a class="navigation-additional__link link" href="./catalog.html">Распродажа</a>
           </li>
         </ul>
         <p class="navigation-additional__description">Бесплатная доставка по России</p>
@@ -53,6 +55,7 @@
   </header>
   <main class="catalog">
     <header class="catalog__header">
+      <h1 class="visually-hidden">Форма заказа интерент-магазина «Мишка»</h1>
       <h2 class="catalog__title title container">Каталог товаров</h2>
     </header>
     <section class="catalog__cards">
@@ -166,7 +169,7 @@
               srcset="./img/basket-mobile@2x.jpg 2x" alt="Sorry, your browser doesn't support embedded videos,
               but don't worry."></picture>
               <button class="production__button-play button-play" type="button"><svg
-              aria-label="Корзина" class="button-play__icon" width="101" height="77" viewBox="0 0 101 77"
+              aria-label="Корзина" class="production__button-play__icon" width="101" height="77" viewBox="0 0 101 77"
               aria-hidden="true" focusable="false">
               <use xlink:href="./img/sprite.svg#icon-play"></use>
             </svg></button>

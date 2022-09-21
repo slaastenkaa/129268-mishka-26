@@ -30,7 +30,7 @@
 
 @media (min-width: $tablet-width) {
   .order__form {
-    margin-bottom: 50px;
+    margin-bottom: 51px;
   }
 
   .order__header {
@@ -63,6 +63,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .order__form {
+    margin-bottom: 49px;
+  }
+
   .order__header {
     min-height: 215px;
     margin-bottom: 6.9rem;

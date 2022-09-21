@@ -17,13 +17,13 @@ navButton.addEventListener('click', function () {
 
 modalButton.forEach(element => element.addEventListener('click', event => {
   if (modalClose.classList.contains('modal-close')) {
-    event.preventDefault(); //не даёт выполниться дефолтному событию
+    event.preventDefault();
     modalClose.classList.remove('modal-close');
   }
 }));
 
 modalClose.addEventListener('click', event => {
-  if (event.target == modalClose && modalClose.classList.contains('modal')) { //чтобы окно не закрывалось по клику на кнопки внутри окна
+  if (event.target == modalClose && modalClose.classList.contains('modal')) { 
     modalClose.classList.add('modal-close');
   }
 });
