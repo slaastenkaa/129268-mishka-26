@@ -59,9 +59,19 @@
 }
 
 .contacts__map {
+  display: flex;
+  justify-content: center;
   width: 100%;
   margin-bottom: 40px;
   border: 0;
+}
+
+.contacts__map-picture {
+  display: none;
+}
+
+.contacts__map-image {
+  width: auto;
 }
 
 .contacts__button {

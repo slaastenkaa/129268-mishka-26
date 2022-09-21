@@ -4,23 +4,23 @@
   padding: 0;
 }
 
-.checkbox {
+.filter-checkbox {
   margin-bottom: 0;
 }
 
-.form {
+.filter-form {
   margin-bottom: 11px;
 }
 
-.contact {
+.filter-contact {
   margin-bottom: 14px;
 }
 
-.contact-container:first-child {
+.filter-contact-container:first-child {
   margin-bottom: 0.8rem;
 }
 
-.aside {
+.filter-aside {
   margin-bottom: 14px;
 }
 
@@ -36,7 +36,40 @@
   text-transform: uppercase;
 }
 
-.checkbox-container .filter-group__title {
+.filter-radio-label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  line-height: 19px;
+}
+
+.filter-radio-label::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -60px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid $gray-dark;
+  border-radius: 50%;
+}
+
+.filter-radio-input:checked + .filter-radio-label::before {
+  background-image: url("../img/icon-circle.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: center;
+}
+
+.filter-radio-label:hover::before {
+  border-color: $palegreen-light;
+}
+
+.filter-radio-label:active::before {
+  border-color: $black-light;
+}
+
+.filter-checkbox-container .filter-group__title {
   margin-bottom: 31px;
 }
 
@@ -53,6 +86,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -62,11 +96,11 @@
   list-style: none;
 }
 
-.checkbox-list {
+.filter-checkbox-list {
   padding-left: 60px;
 }
 
-.radio-item {
+.filter-radio-item {
   display: flex;
   align-items: center;
   margin-top: 0.6rem;
@@ -75,25 +109,25 @@
   min-height: 37px;
 }
 
-.checkbox-item {
+.filter-checkbox-item {
   margin-bottom: 2.65rem;
 }
 
 // Форма ввода данных
-.form-title {
+.filter-form-title {
   margin-bottom: 1.4rem;
 }
 
-.form-list {
+.filter-form-list {
   padding: 0;
 }
 
-.form-item {
+.filter-form-item {
   display: flex;
   flex-direction: column;
 }
 
-.form-label {
+.filter-form-label {
   font-family: inherit;
   font-style: normal;
   font-size: 17px;
@@ -101,11 +135,11 @@
   margin-bottom: 14px;
 }
 
-.contact-title {
+.filter-contact-title {
   margin-bottom: 15px;
 }
 
-.form-input {
+.filter-form-input {
   @include text;
   width: 100%;
   margin-bottom: 22px;
@@ -117,33 +151,34 @@
   outline: none;
 }
 
-.form-input:hover,
-.form-input:active {
+.filter-form-input:hover,
+.filter-form-input:active {
   border: none;
   border-bottom: 2px solid $palegreen-light;
 }
 
-.form-input:active {
+.filter-form-input:active {
   color: $gray-dark;
 }
 
 .filter-group__icon {
   position: absolute;
+  top: 2.2rem;
   right: 8px;
   fill: $black;
   opacity: 0.2;
 }
 
-.form-input:hover ~ .filter-group__icon {
+.filter-form-input:hover ~ .filter-group__icon {
   fill: $palegreen-light;
   opacity: 1;
 }
 
-.form-phone {
+.filter-form-phone {
   position: relative;
 }
 
-.aside-title {
+.filter-aside-title {
   margin-bottom: 18px;
 }
 
@@ -190,25 +225,54 @@
     background-color: $anti-flash-white;
   }
 
-  .checkbox {
+  .filter-checkbox {
     padding: 66px 0 24px;
   }
 
-  .form {
+  .filter-form {
     padding: 68px 0 13px;
   }
 
-  .contact {
-    padding: 65px 0 30px;
+  .filter-radio-label::before {
+    top: -17px;
+    left: -76px;
+    width: 50px;
+    height: 50px;
   }
 
-  .aside {
-    padding: 65px 0 52px;
+  .filter-radio-input:checked + .filter-radio-label::before {
+    background-size: 21px 21px;
+  }
+
+  .filter-radio-label {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .filter-contact {
+    padding: 65px 0 27px;
+
+    .filter-container {
+      grid-template-columns: none;
+    }
+
+    .filter-contact-title {
+      width: 34%;
+    }
+  }
+
+  .filter-aside {
+    padding: 65px 0 53px;
   }
 
   .filter-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .filter-group__container {
+    // margin-top: -54px;
+    flex-direction: row;
   }
 
   .filter-group__title {
@@ -225,12 +289,12 @@
     grid-column: 2 / -1;
   }
 
-  .radio-item {
+  .filter-radio-item {
     margin-left: 2.3em;
     margin-bottom: 2.4rem;
   }
 
-  .checkbox-list {
+  .filter-checkbox-list {
     display: grid;
     margin-top: -3.2rem;
     margin-left: 1.3rem;
@@ -239,50 +303,45 @@
     row-gap: 1rem;
   }
 
-  .form-label {
+  .filter-form-label {
     margin-right: 1.5rem;
     font-size: 19px;
     line-height: 18px;
   }
 
-  .form-list {
+  .filter-form-list {
     margin-top: -49px;
     margin-left: 0;
   }
 
-  .form-item {
+  .filter-form-item {
     flex-direction: row;
     align-items: baseline;
     margin-bottom: 1rem;
   }
 
-  .form-input {
+  .filter-form-input {
     margin-bottom: 21px;
     padding: 0 17px 12px;
     font-size: 19px;
     line-height: 18px;
   }
 
-  .contact-container:first-child {
+  .filter-contact-container:first-child {
     margin-bottom: 1.2rem;
   }
 
-  .contact-list:first-child {
-    margin-top: -36px;
+  .filter-contact-list:first-child {
+    margin-top: -2px;
   }
 
-  .contact-list:nth-child(2) {
+  .filter-contact-list:nth-child(2) {
     margin-top: -38px;
   }
 
   .filter-group__icon {
     top: 2px;
     right: 23px;
-  }
-
-  .filter-group__container {
-    margin-top: -54px;
-    grid-column: 2/-1;
   }
 
   .filter-group__textarea {
@@ -321,19 +380,27 @@
     padding: 30px 0 18px;
   }
 
-  .checkbox {
+  .filter-checkbox {
     padding: 67px 0 24px;
   }
 
-  .form {
+  .filter-form {
     padding: 69px 0 12px;
   }
 
-  .contact {
-    padding: 66px 0 27px;
+  .filter-contact {
+    padding: 65px 0 29px;
+
+    .filter-contact-container:first-child {
+      margin-bottom: 1.1rem;
+    }
+
+    .filter-contact-title {
+      width: 40%;
+    }
   }
 
-  .aside {
+  .filter-aside {
     padding: 65px 0 50px;
   }
 
@@ -342,7 +409,7 @@
     margin-left: 3.7rem;
   }
 
-  .radio-item {
+  .filter-radio-item {
     margin-bottom: 2.4rem;
   }
 
@@ -350,22 +417,28 @@
     grid-template-columns: 0.5fr repeat(2, 1fr) 0.5fr;
   }
 
-  .checkbox-list {
+  .filter-checkbox-list {
     grid-template-columns: repeat(3, 0.28fr);
     column-gap: 6rem;
     row-gap: 1rem;
   }
 
-  .form-list {
+  .filter-form-list {
     grid-column: 2/4;
   }
 
-  .contact-list {
-    grid-column: 2/4;
+  .filter-contact-list {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 0.25fr;
+
+    .filter-form-input {
+      grid-column: 2/3;
+    }
   }
 
   .filter-group__icon {
-    right: 5px;
+    top: 0;
+    right: 11.3rem;
   }
 
   .filter-group__textarea {
