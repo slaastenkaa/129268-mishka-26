@@ -1,9 +1,11 @@
 const navClose = document.querySelector('.page-header__closed');
+const contactsMapImg = document.querySelector('.contacts__map-image');
 const navButton = document.querySelector('.navigation__button');
 const modalButton = document.querySelectorAll('.modal-button');
 const modalClose = document.querySelector('.modal-close');
 
 navClose.classList.remove('page-header__nojs');
+contactsMapImg.classList.add('contacts__map-picture');
 
 navButton.addEventListener('click', function () {
   if (navClose.classList.contains('page-header__opened')) {
