@@ -27,3 +27,9 @@ modalClose.addEventListener('click', event => {
     modalClose.classList.add('modal-close');
   }
 });
+
+document.addEventListener('keydown', function(event) {
+  if (event.keyCode === 27) {
+    modalClose.classList.add('modal-close');
+  }
+});
